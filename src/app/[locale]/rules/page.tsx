@@ -1,5 +1,6 @@
 'use client';
 
+import { Download } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import React from 'react';
 
@@ -40,12 +41,13 @@ const RulesPage = () => {
             variant='secondary'
             size='lg'
             className={`
-              bg-gradient-to-r from-primary to-secondary font-bold transition-transform
+              flex items-center gap-2 bg-gradient-to-r from-primary to-secondary font-bold transition-transform
 
               hover:scale-105
             `}
           >
             {text('download')}
+            <Download className='h-5 w-5' strokeWidth={3} />
           </Button>
         </a>
       </div>

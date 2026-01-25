@@ -1,4 +1,4 @@
-import { AudioWaveform, Brain, Calendar, HandCoins, Ruler, TicketCheck } from 'lucide-react';
+import { Calendar1, Ruler, Puzzle, Zap, HandCoins, Repeat } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 import { Reveal } from '@/components/ui/Reveal';
@@ -9,7 +9,7 @@ export default function InfoSection() {
   const infoCards = [
     {
       id: 1,
-      icon: () => <Calendar className='h-10 w-10' />,
+      icon: () => <Calendar1 className='h-10 w-10' />,
     },
     {
       id: 2,
@@ -17,11 +17,11 @@ export default function InfoSection() {
     },
     {
       id: 3,
-      icon: () => <Brain className='h-10 w-10' />,
+      icon: () => <Puzzle className='h-10 w-10' />,
     },
     {
       id: 4,
-      icon: () => <TicketCheck className='h-10 w-10' />,
+      icon: () => <Zap className='h-10 w-10' />,
     },
     {
       id: 5,
@@ -29,7 +29,7 @@ export default function InfoSection() {
     },
     {
       id: 6,
-      icon: () => <AudioWaveform className='h-10 w-10' />,
+      icon: () => <Repeat className='h-10 w-10' />,
     },
   ].map((card) => ({
     ...card,
