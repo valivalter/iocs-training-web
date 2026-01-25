@@ -98,9 +98,13 @@ const Footer = () => {
           <a className='hover:underline' href='https://github.com/balint-kiraly'>
             Bálint Király
           </a>{' '}
-          &{' '}
+          |{' '}
           <a className='hover:underline' href='https://github.com/nagytamas8'>
             Tamás Nagy
+          </a>{' '}
+          |{' '}
+          <a className='hover:underline' href='https://github.com/valivalter'>
+            Valter Váli
           </a>
         </p>
       </div>
