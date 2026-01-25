@@ -16,7 +16,7 @@ interface VerticalCarouselProps {
   autoplayInterval?: number;
 }
 
-const VerticalCarousel: React.FC<VerticalCarouselProps> = ({ images, autoplayInterval = 4000 }) => {
+const VerticalCarousel: React.FC<VerticalCarouselProps> = ({ images, autoplayInterval = 7000 }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     axis: 'y',
     loop: true,
@@ -25,6 +25,7 @@ const VerticalCarousel: React.FC<VerticalCarouselProps> = ({ images, autoplayInt
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [isInteracting, setIsInteracting] = useState(false);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -46,14 +47,14 @@ const VerticalCarousel: React.FC<VerticalCarouselProps> = ({ images, autoplayInt
   }, [emblaApi, onSelect]);
 
   useEffect(() => {
-    if (emblaApi && !isPaused) {
+    if (emblaApi && !isPaused && !isInteracting) {
       const autoplay = setInterval(() => {
         emblaApi.scrollNext();
       }, autoplayInterval);
 
       return () => clearInterval(autoplay);
     }
-  }, [emblaApi, autoplayInterval, isPaused]);
+  }, [emblaApi, autoplayInterval, isPaused, isInteracting]);
 
   const togglePause = () => {
     setIsPaused(!isPaused);
@@ -68,7 +69,13 @@ const VerticalCarousel: React.FC<VerticalCarouselProps> = ({ images, autoplayInt
       `}
     >
       {/* Embla Carousel */}
-      <div ref={emblaRef} className='absolute inset-0 overflow-hidden'>
+      <div
+        ref={emblaRef}
+        className='absolute inset-0 overflow-hidden'
+        onPointerDown={() => setIsInteracting(true)}
+        onPointerUp={() => setIsInteracting(false)}
+        onPointerLeave={() => setIsInteracting(false)}
+      >
         <div className='flex h-full flex-col items-center gap-4'>
           {images.map((image, index) => {
             const aspectRatio = image.width / image.height;
