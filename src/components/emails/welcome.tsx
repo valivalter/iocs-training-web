@@ -23,8 +23,8 @@ export default function WelcomeEmail({ name, locale }: { name: string; locale: s
       <Head />
       <Preview>
         {hungarian
-          ? 'Fontos információk a 2025-ös Instruktorképzésről'
-          : 'Important information about the 2025 Instructor Training'}
+          ? 'Fontos információk a 2026-os Instruktorképzésről'
+          : 'Important information about the 2026 Instructor Training'}
       </Preview>
       <Tailwind
         config={{
@@ -63,11 +63,11 @@ export default function WelcomeEmail({ name, locale }: { name: string; locale: s
                 <Text className='text-base'>
                   {hungarian ? (
                     <>
-                      Hálásak vagyunk, hogy jelentkeztél a <strong>2025-ös Instruktorképzésre</strong>!
+                      Hálásak vagyunk, hogy jelentkeztél a <strong>2026-os Instruktorképzésre</strong>!
                     </>
                   ) : (
                     <>
-                      We are pleased that you have applied for the <strong>2025 Instructor training</strong>!
+                      We are pleased that you have applied for the <strong>2026 Instructor training</strong>!
                     </>
                   )}
                 </Text>
@@ -84,13 +84,13 @@ export default function WelcomeEmail({ name, locale }: { name: string; locale: s
               <li className='mb-20'>
                 {hungarian ? (
                   <>
-                    A megnyitó <strong>február 13-án, 17 órakor</strong> kezdődik. Arra szeretnénk kérni Téged, hogy{' '}
+                    A megnyitó <strong>február 25-én, 17 órakor</strong> kezdődik. Arra szeretnénk kérni Téged, hogy{' '}
                     <strong>16:45-re érkezz</strong> a <strong>Nagyvárad téri Elméleti Tömb Dísztermébe</strong>
                     (1089 Budapest, Nagyvárad tér 4.), hogy a megnyitót időben tudjuk kezdeni.
                   </>
                 ) : (
                   <>
-                    The opening ceremony will be held on <strong>February 13th at 5:00 PM</strong> in{' '}
+                    The opening ceremony will be held on <strong>February 25th at 5:00 PM</strong> in{' '}
                     <strong>Nagyvárad tér Theoretical Building auditorium</strong> (Nagyvárad tér 4, Budapest, 1089).
                     Please arrive at <strong>4:45 PM</strong> so that we can start the opening on time.
                   </>

@@ -1,11 +1,11 @@
 {
   "Metadata": {
-    "title": "IÖCS Instruktorképzés 2025 | Légy részese az élménynek",
-    "description": "Vegyél részt a 2025-ös IÖCS Instruktorképzésen! Légy részese egy felejthetetlen élménynek, és építs életre szóló kapcsolatokat.",
-    "keywords": "IÖCS, Instruktor, Képzés, Instruktorképzés, 2025, Közösség, Jelentkezés, Semmelweis, Egyetem"
+    "title": "IÖCS Instruktorképzés 2026 | Légy részese az élménynek",
+    "description": "Vegyél részt a 2026-os IÖCS Instruktorképzésen! Légy részese egy felejthetetlen élménynek, és építs életre szóló kapcsolatokat.",
+    "keywords": "IÖCS, Instruktor, Képzés, Instruktorképzés, 2026, Közösség, Jelentkezés, Semmelweis, Egyetem"
   },
   "Header": {
-    "title": "Instruktorképzés 2025",
+    "title": "Instruktorképzés 2026",
     "home": "Főoldal",
     "rules": "Szabályzat",
     "contact": "Kapcsolat",
@@ -17,23 +17,23 @@
   },
   "HeroSection": {
     "heading": "Várunk az Instruktorképzésen!",
-    "heading-sm": "Várunk az Instruktor képzésen!",
+    "heading-sm": "Várunk az Instruktorképzésen!",
     "subheading": "Légy részese egy felejthetetlen élménynek, és építs életre szóló kapcsolatokat.",
-    "cta": "Jelentkezz Most",
-    "cta-video": "Nézd Meg a Videót"
+    "cta": "Jelentkezz most",
+    "cta-video": "Nézd meg a videót"
   },
   "Countdown": {
-    "heading": "A képzésig hátra van",
+    "heading": "A képzésig hátravan",
     "over": "A képzés elkezdődött!",
     "days": "nap",
     "hours": "óra",
     "minutes": "perc",
-    "seconds": "sec"
+    "seconds": "másodperc"
   },
   "ApplicationSection": {
     "heading": "Várunk az Instruktorképzésen!",
     "subheading": "Csatlakozz az IÖCS közösségéhez, és légy részese egy felejthetetlen élménynek!",
-    "cta": "Jelentkezz Most!"
+    "cta": "Jelentkezz most!"
   },
   "IntroductionSection": {
     "heading": "A képzéscsoportok csak rád várnak!"
@@ -59,11 +59,11 @@
   "Info": {
     "card-1": {
       "title": "Első képzés időpontja, helyszíne",
-      "description": "<em>Február 13.</em> 17:00, Nagyvárad Téri Elméleti tömb."
+      "description": "<em>Február 25.</em> 17:00, Nagyvárad Téri Elméleti tömb."
     },
     "card-2": {
       "title": "Képzés hossza",
-      "description": "Az Instruktorképzés <em>7 hetet</em> ölel fel, február 13-tól március 30-ig."
+      "description": "Az Instruktorképzés <em>8 hetet</em> ölel fel, február 25-tól április 19-ig."
     },
     "card-3": {
       "title": "Képzések felépítése",
@@ -86,10 +86,10 @@
     "f-box-header": "Mire számíts?",
     "s-box-header": "Mi az az IÖCS?",
     "text": {
-      "f-box-p1": "A képzés során 7 hétig fogtok közösen fejest ugrani az IÖCS-be.",
+      "f-box-p1": "A képzés során 8 hétig fogtok közösen fejest ugrani az IÖCS-be.",
       "f-box-p2": "Heti egy talira kell számítani, körülbelül 17-18 órás kezdéssel.",
       "f-box-p3": "A tali után mindig van after, ahol kötetlenebbül beszélgethettek.",
-      "f-box-p4": "A hét hét során két hétvége is lesz, ahol még mélyebbre tudjátok fűzni a kapcsolatotokat.",
+      "f-box-p4": "A nyolc hét során két hétvége is lesz, ahol még mélyebbre tudjátok fűzni a kapcsolatotokat.",
       "f-box-p5": "Mindeközben megtudhatjátok hogyan működik az IÖCS, milyen rendezvényeink vannak és milyen lehetőségeitek lesznek.",
       "f-box-p6": "Gyere, hogy te is átéld az Instruktor Életérzést!",
       "s-box-p1": "Az IÖCS, vagyis az <em>Instruktor Öntevékeny Csoport</em>, egy lelkes és összetartó közösség, amely az egyetemi élet színesebbé tételén dolgozik. ",
@@ -149,11 +149,11 @@
       "question10": "Mi az IÖCS célja?"
     },
     "answers": {
-      "answer1": "Az IÖCS egy diák szövetkezet, amelynek célja a diákok támogatása tanulmányaik alatt és lehetőséget biztosít számukra, hogy egy támogató közösség részévé váljanak.",
+      "answer1": "Az IÖCS egy diákszövetkezet, amelynek célja a diákok támogatása tanulmányaik alatt és lehetőséget biztosít számukra, hogy egy támogató közösség részévé váljanak.",
       "answer2": "A diákok a szövetkezet honlapján keresztül regisztrálhatnak és online jelentkezhetnek a különböző programokra.",
       "answer3": "Az IÖCS tagságának előnyei közé tartozik a közösség támogatása, a különböző programokon való részvétel lehetősége és a szövetkezet sikereinek támogatása.",
       "answer4": "A képzésre való jelentkezéshez a diákoknak regisztrálniuk kell a szövetkezet honlapján és online jelentkezniük kell a képzésre.",
-      "answer5": "A képzés időtartama 2025. január 20. és 2025. február 12. között lesz.",
+      "answer5": "A képzés időtartama 2026. február 25. és 2026. április 19. között lesz.",
       "answer6": "A képzés befogadóképessége körülbelül 300 fő.",
       "answer7": "A képzésre való jelentkezéshez nincs korhatár.",
       "answer8": "A jelentkezési határidőt a szövetkezet honlapján található információk alapján kell figyelembe venni.",
@@ -164,7 +164,7 @@
   "ApplicationForm": {
     "heading": "Jelentkezés",
     "alert": {
-      "text": "A 2025-ös Instruktorképzésre csak Semmelweis hallgatókat áll módunkban fogadni"
+      "text": "A 2026-os Instruktorképzésre csak Semmelweis hallgatókat áll módunkban fogadni"
     },
     "deadlinePassed": "A jelentkezési határidő lejárt. Sajnos már nem tudsz jelentkezni.",
     "sections": {
@@ -200,8 +200,8 @@
       "diet": "Étrend",
       "customDiet": "Egyedi étrend",
       "languages": "Milyen nyelveken beszélsz?",
-      "availableAtWeekend1": "Március 7-9",
-      "availableAtWeekend2": "Március 21-23",
+      "availableAtWeekend1": "Március 13-15.",
+      "availableAtWeekend2": "Március 20-22.",
       "international": "Szeretnél angol csoportban képződni?",
       "motivation": "Motiváció",
       "certificates": "Nyelvvizsgák",
@@ -216,8 +216,8 @@
       "languages": "Add meg a nyelveket szóközzel elválasztva.",
       "availability": "Jelöld meg, mely hétvégéken érsz rá",
       "international": "A képzés során egy csoport angol nyelven fog indulni",
-      "acceptRules": "Kijelentem, hogy elolvastam és elfogadom a 2025-ös Instruktorképzés <link>szabályzatát</link>, és azokat magamra nézve kötelezőnek tartom.",
-      "acceptPrivacyPolicy": "A jelentkezésem benyújtásával megerősítem, hogy elolvastam és elfogadom a 2025-ös Instruktorképzés, az Instruktor Öntevékeny Csoport és az IÖCS Egyesület <link>adatvédelmi tájékoztatóját</link>."
+      "acceptRules": "Kijelentem, hogy elolvastam és elfogadom a 2026-os Instruktorképzés <link>szabályzatát</link>, és azokat magamra nézve kötelezőnek tartom.",
+      "acceptPrivacyPolicy": "A jelentkezésem benyújtásával megerősítem, hogy elolvastam és elfogadom a 2026-os Instruktorképzés, az Instruktor Öntevékeny Csoport és az IÖCS Egyesület <link>adatvédelmi tájékoztatóját</link>."
     },
     "placeholders": {
       "firstName": "Keresztnév",

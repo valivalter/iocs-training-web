@@ -1,11 +1,11 @@
 {
   "Metadata": {
-    "title": "IÖCS Instructor Training 2025 | Join the Experience",
-    "description": "Join the 2025 IÖCS Instructor Training! Be part of an unforgettable experience and make lifelong connections.",
-    "keywords": "IÖCS, Instructor, Training, 2025, Community, Application, Semmelweis, University"
+    "title": "IÖCS Instructor Training 2026 | Join the Experience",
+    "description": "Join the 2026 IÖCS Instructor Training! Be part of an unforgettable experience and make lifelong connections.",
+    "keywords": "IÖCS, Instructor, Training, 2026, Community, Application, Semmelweis, University"
   },
   "Header": {
-    "title": "Instructor Training 2025",
+    "title": "Instructor Training 2026",
     "home": "Home",
     "rules": "Rules",
     "contact": "Contact",
@@ -59,11 +59,11 @@
   "Info": {
     "card-1": {
         "title": "Date and place of first training",
-        "description": "<em>13 February</em> 17:00, Nagyvárad Téri Elméleti tömb."
+        "description": "<em>25 February</em> 17:00, Nagyvárad Téri Elméleti tömb."
     },
     "card-2": {
         "title": "Length of training",
-        "description": "The Instructor Training will last <em>7 weeks</em>, from 13 February to 30 March."
+        "description": "The Instructor Training will last <em>8 weeks</em>, from 25 February to 19 April."
     },
     "card-3": {
         "title": "Structure of training courses",
@@ -86,7 +86,7 @@
     "f-box-header": "What should you expect?",
     "s-box-header": "What is the IÖCS?",
     "text": {
-      "f-box-p1": "During the training you will dive into the IÖCS together for 7 weeks.",
+      "f-box-p1": "During the training you will dive into the IÖCS together for 8 weeks.",
       "f-box-p2": "You should expect one session per week, starting around 17-18 hours.",
       "f-box-p3": "After the Tali there is always an after where you can have a more informal chat.",
       "f-box-p4": "There will also be two weekends during the week where you can deepen your relationship.",
@@ -153,10 +153,10 @@
       "answer2": "You can join the IÖCS by registering on the cooperative's website and applying for the various programmes.",
       "answer3": "The benefits of being a member include gaining experience, contributing to different projects, and being part of a super community.",
       "answer4": "You can apply for the training by filling out the online application form on the cooperative's website.",
-      "answer5": "The training will take place from January 20th to February 12th, 2025.",
+      "answer5": "The training will take place from February 25th to April 19th, 2026.",
       "answer6": "The training has a capacity of around 300 people.",
       "answer7": "The age limit for the training is 16 years old.",
-      "answer8": "The deadline for applying is January 10th, 2025.",
+      "answer8": "The deadline for applying is February 25th, 2026.",
       "answer9": "The IÖCS community is supportive, inclusive, and diverse, with members from different backgrounds and experiences.",
       "answer10": "The goals of the IÖCS are to support students during their studies, provide opportunities for personal and professional development, and create a sense of community among members."
     }
@@ -164,7 +164,7 @@
   "ApplicationForm": {
     "heading": "Application",
     "alert": {
-      "text": "We can only accept Semmelweis students for the 2025 Instructor Training."
+      "text": "We can only accept Semmelweis students for the 2026 Instructor Training."
     },
     "deadlinePassed": "The application deadline has passed. Unfortunately, we are no longer accepting applications.",
     "sections": {
@@ -200,8 +200,8 @@
       "diet": "Dietary Preferences",
       "customDiet": "Custom Dietary Preferences",
       "languages": "What languages do you speak?",
-      "availableAtWeekend1": "March 7-9",
-      "availableAtWeekend2": "March 21-23",
+      "availableAtWeekend1": "March 13-15",
+      "availableAtWeekend2": "March 20-22",
       "international": "Would you like to participate in english?",
       "motivation": "Motivation",
       "certificates": "Language Certificates",
@@ -216,8 +216,8 @@
       "languages": "Enter the languages, separated by spaces.",
       "availability": "Please let us know on which weekends you are available.",
       "international": "In the training one group will be conducted in English.",
-      "acceptRules": "I declare that I have read and accepted the 2025 Instructor Training <link>Rules</link> and consider them binding upon myself.",
-      "acceptPrivacyPolicy": "By submitting my application, I confirm that I have read and accepted the <link>Data Protection Notice</link> for the 2025 Instructor Training, the Instructor Unprompted Group, and the IÖCS Association."
+      "acceptRules": "I declare that I have read and accepted the 2026 Instructor Training <link>Rules</link> and consider them binding upon myself.",
+      "acceptPrivacyPolicy": "By submitting my application, I confirm that I have read and accepted the <link>Data Protection Notice</link> for the 2026 Instructor Training, the Instructor Unprompted Group, and the IÖCS Association."
     },
     "placeholders": {
       "firstName": "First Name",
