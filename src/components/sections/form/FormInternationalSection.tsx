@@ -52,7 +52,6 @@ export const FormInternationalSection: React.FC<FormInternationalSectionProps> =
                       }}
                     />
                   </FormControl>
-                  <FormMessage />
                 </FormItem>
 
                 {field.value !== undefined && (
