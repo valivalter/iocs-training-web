@@ -79,7 +79,7 @@
     },
     "card-6": {
       "title": "Képzések gyakorisága",
-      "description": "<em>Minden héten</em>, 1 képzésalkalomra invitálunk titeket, ami délután fog kezdődni és az esti órákban végződik."
+      "description": "<em>Hetente 1</em> képzésalkalomra invitálunk titeket, ami délután fog kezdődni és az esti órákban végződik."
     }
   },
   "Details": {
@@ -104,7 +104,7 @@
     "acceptance": "Minden résztvevő e dokumentumban foglalt szabályok elfogadásával vehet részt az Instruktorképzésben.",
     "title": "Házirend",
     "rules": {
-      "rule-1": "Ezen Részvételi szabályzat és házirend személyi hatálya az Instruktorképzésben résztvevő minden személyre kiterjed, így különösen az Instruktorképzésen részt vevőkre (továbbiakban: képződő), a képzés szervezésében, lebonyolításában részt vevő személyekre (instruktorok) és a szolgáltatókra (pl. biztonságért felelős személyek, büfé, fellépők, stb.), valamint a velük munkaviszonyban, vagy munkavégzésre irányuló egyéb jogviszonyban foglalkoztatott személyekre. Jelen Szabályzat területi hatálya a képzéshez kapcsolódó rendezvények teljes területére vonatkozik.",
+      "rule-1": "Ezen Részvételi szabályzat és házirend személyi hatálya az Instruktorképzésben résztvevő minden személyre kiterjed, így különösen az Instruktorképzésen részt vevőkre (továbbiakban: képződő), a képzés szervezésében, lebonyolításában részt vevő személyekre (instruktorok) és a szolgáltatókra (pl. biztonságért felelős személyek, <bufe>büfé</bufe>, fellépők, stb.), valamint a velük munkaviszonyban, vagy munkavégzésre irányuló egyéb jogviszonyban foglalkoztatott személyekre. Jelen Szabályzat területi hatálya a képzéshez kapcsolódó rendezvények teljes területére vonatkozik.",
       "rule-2": "A szervezők a szabályokat mindannyiunk kulturált szórakozása és ismerkedése érdekében alkották meg, azonban a szervezők rendkívüli esetben korlátozhatnak, vagy megszüntethetnek minden olyan tevékenységet, - különös tekintettel a kábítószer fogyasztására, azzal való kereskedésre, - mely mások életét, egészségét, testi épségét veszélyezteti.",
       "rule-3": "A teljes Instruktorképzés és a kapcsolódó rendezvények területére nem vihető be olyan eszköz, anyag, vagy bárminemű dolog, amely saját vagy mások életében, testi épségében, egészségében, vagy a résztvevők vagyontárgyaiban kárt okozhat, így különösen nem vihetők be: ütő-, szúró-, vágóeszközök, fegyverek vagy annak minősülő tárgyak, robbanás- vagy tűzveszélyes anyagok (pl. petárdák), mérgek, kábítószerek, stb. Ezen tárgyakat a szervezők jogosultak elkobozni, illetve ilyen tárgyakkal a belépés a rendezvény területére nem lehetséges.",
       "rule-4": "Az Instruktorképzés alatti rendezvények őrzés-védelméről és biztosításáról a szervezők gondoskodnak. A teljes képzés ideje alatt bármiféle személyes tárgyat, felszerelést, ruhát, stb. a résztvevők saját felelősségükre hozhatnak magukkal és mindenki maga köteles gondoskodni értékei védelméről.",
@@ -118,20 +118,20 @@
       "rule-12": "A Képzésben résztvevő köteles az akut, állandó, avagy időszakos betegségeit, allergiáját közölni, illetve az arra való gyógyszerezési útmutatást nyomtatott formában benyújtani. A Szervezők az adatokat szigorú titoktartással kezelik, a csapatvezetőn kívül harmadik személy számára tovább nem adják. A szabály betartására az esetleges vészhelyzetek megelőzése okán van szükség.",
       "rule-13": "A Résztvevők tudomásul veszik, hogy a jelen Házirendben foglaltak be nem tartása, bűncselekmény vagy szabálysértés megalapozott gyanúja esetén a szükséges jogkövetkezmények levonásáig, legfeljebb annak idejére a biztonságért felelős személyek jogosultak az érintett Résztvevő feltartóztatására. Bűncselekmény esetén a tetten ért elkövetőt bárki elfoghatja és köteles értesíteni a rendőrséget. (ld. 1998. évi XIX. törvény 127. § (3) bek.) A Résztvevők kifejezetten elismerik, hogy a jelen pontban foglalt intézkedés velük szemben történő esetleges alkalmazása nem minősül a szabadsághoz, és a mozgáshoz való szabadságuk korlátozásának, vagy megsértésének.",
       "rule-14": "Bármilyen normát és vagy jogszabályt sértő cselekmény esetén (a cselekmény elkövetéséhez képest 5 hónapon belül) az Egyetem a történtek miatt fegyelmi eljárást indít. A fegyelmi büntetés lehet: megrovás, szigorú megrovás, a térítési és juttatási szabályzatban meghatározott kedvezmények és juttatások - legfeljebb hat hónap időtartamra szóló - csökkentése, illetőleg megvonása, határozott időre - legfeljebb két félévre - szóló eltiltás a tanulmányok folytatásától, kizárás a felsőoktatási intézményből.",
-      "rule-15": "A biztonságért felelős személyek kábítószer birtoklásának, vagy fogyasztásának vagy más bűncselekmény elkövetésének gyanúja esetén átkutathatják a gyanúba keveredett személyt, és csomagját. Az eljárás során jelen kell lennie az érintettnek, az átvizsgálást végző erre illetékes biztonságért felelős személy(ek)nek, valamint Sisa Orsolya elnöknek.",
+      "rule-15": "A biztonságért felelős személyek kábítószer birtoklásának, vagy fogyasztásának vagy más bűncselekmény elkövetésének gyanúja esetén átkutathatják a gyanúba keveredett személyt, és csomagját. Az eljárás során jelen kell lennie az érintettnek, az átvizsgálást végző erre illetékes biztonságért felelős személy(ek)nek, valamint Sebeszta Zsófia elnöknek.",
       "rule-16": "A képzés ideje alatt olyan fénykép, hangfelvétel, film-, mozgóképfelvétel, videó készítése, tárolása, valamint közzététele bármely módon (ideértve csak példa jelleggel: internet, Facebook, Flickr, instagram, Tumblr, twitter, youtube, tiktok, stb.) tilos, amely bárkinek személyét, jogát, jogos érdekét sérti. Az ilyen jellegű fényképek, felvételek tárolása, közzététele a rendezvényt követően is tilos!",
       "rule-17": "A fent írtak az Instruktorképzés minden résztvevőjére egyaránt, azonos mértékben vonatkoznak.",
       "rule-18": "Nyilatkozom, hogy hozzájárulok, hogy rólam a rendezvényen hang- és képfelvétel készüljön, azokat a szervezők tárolják, működésükhöz felhasználják, az Egyetem számára átadják. A felvételek tárolásával, későbbi felhasználásával kapcsolatosan semmiféle térítésre nem tartok igényt.",
       "rule-19": "Amennyiben olyan felvételről szerzek tudomást, amelyik személyemre vagy másra nézve sértő tartalommal bír, úgy e tényt haladéktalanul jelzem a rendezvény szervezőinek, hogy ők intézkedhessenek a bejelentéssel érintett tartalom megvizsgálásáról és szükség szerinti törléséről.",
       "rule-20": "Az információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvény (Infotv.) 65. § (3) a) szerint jelen adatkezelésről a NAIH nem vezet nyilvántartást."
     },
-    "download": "Szabályzat Letöltése"
+    "download": "Szabályzat letöltése"
   },
   "ContactSection": {
     "heading": "Kontaktok",
     "title-training-organizer": "Képzésszervező",
-    "title-FEB": "Felügyelőbizottság Elnök",
-    "title-IOCS": "Instruktor Öntevékeny Csoport Elnök",
+    "title-FEB": "Felügyelőbizottsági elnök",
+    "title-IOCS": "Instruktor Öntevékeny Csoport elnöke",
     "send-message": "Üzenj nekünk"
   },
   "FAQSection": {
