@@ -1,17 +1,26 @@
-import { ChevronDown, Play, Rocket } from 'lucide-react';
+'use client';
+
+import { ChevronDown, Gift, Rocket } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import React from 'react';
 
 import { Button } from '@/components/ui/button';
 import Countdown from '@/components/ui/Countdown';
+import { Dialog, DialogContent, DialogTitle, VisuallyHidden } from '@/components/ui/dialog'; 
 import { Reveal } from '@/components/ui/Reveal';
 import ScrollButton from '@/components/ui/ScrollButton';
 import VimeoPlayer from '@/components/ui/VimeoPlayer';
 import { Link } from '@/i18n/routing';
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  promoVideoVimeoId?: number;
+  eventStartDatetime?: string;
+}
+
+const HeroSection = ({ promoVideoVimeoId, eventStartDatetime }: HeroSectionProps) => {
   const text = useTranslations('HeroSection');
   const locale = useLocale();
+  const [isDialogOpen, setIsDialogOpen] = React.useState(false);
 
   return (
     <section
@@ -24,7 +33,7 @@ const HeroSection = () => {
             -translate-x-1/2 -translate-y-1/2
           `}
         >
-          <VimeoPlayer id={Number(process.env.PROMO_VIDEO_VIMEO_ID)} autoplay={true} />
+          <VimeoPlayer id={promoVideoVimeoId ?? 0} autoplay={true} />
         </div>
 
         <div className='absolute inset-0 bg-gradient-to-b from-primary/80 to-transparent to-30%' />
@@ -58,7 +67,7 @@ const HeroSection = () => {
 
       <div className='flex flex-col items-center'>
         <Reveal delay={0.2}>
-          <Countdown targetDate={process.env.EVENT_START_DATETIME ?? new Date().toDateString()} />
+          <Countdown targetDate={eventStartDatetime ?? new Date().toDateString()} />
         </Reveal>
 
         <div className='mb-[5vh] mt-4 flex flex-wrap items-center justify-center gap-4'>
@@ -71,14 +80,27 @@ const HeroSection = () => {
             </Link>
           </Reveal>
           <Reveal delay={0.5}>
-            <ScrollButton to='promo-video'>
-              <Button variant='outline' size='lg' className='bg-accent'>
-                <Play />
-                {text('cta-video')}
-              </Button>
-            </ScrollButton>
+            <Button
+              variant='outline' size='lg' className='bg-gradient-to-tr from-amber-500/50 to-amber-600'
+              onClick={() => setIsDialogOpen(true)}
+            >
+              <Gift className='!h-5 !w-5' />
+              {text('cta-surprise')}
+            </Button>
           </Reveal>
         </div>
+
+        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+          <DialogContent className='max-w-xs bg-gradient-to-tr from-amber-500/50 to-amber-600'>
+            <VisuallyHidden>
+              <DialogTitle>{text('dialog-message')}</DialogTitle>
+            </VisuallyHidden>
+            <div className='flex flex-col items-center gap-4 py-4 text-center'>
+              <span className='text-6xl'>👌</span>
+              <p className='text-foreground text-lg font-semibold'>{text('dialog-message')}</p>
+            </div>
+          </DialogContent>
+        </Dialog>
 
         <Reveal delay={3}>
           <ScrollButton to='info'>
