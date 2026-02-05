@@ -1,10 +1,9 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
-
 import { motion, useInView } from 'framer-motion';
 import { Facebook, Globe, Instagram, Turtle } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
+import React, { useEffect, useRef, useState } from 'react';
 
 import { toast } from '@/hooks/use-toast';
 import { Link } from '@/i18n/routing';

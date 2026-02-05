@@ -1,9 +1,8 @@
 'use client';
 
-import React from 'react';
-
 import { Download, PawPrint } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
+import React from 'react';
 
 import { Button } from '@/components/ui/button';
 import { ToastAction } from '@/components/ui/toast';
