@@ -195,7 +195,7 @@ export const ApplicationForm = ({ deadline }: { deadline: Date | null }) => {
               </>
             )}
             <div className='mt-10 flex justify-end'>
-              <Button type='submit' variant='primary' disabled={isPending}>
+              <Button type='submit' variant='primary' disabled={isPending} className='bg-gradient-to-br from-primary to-secondary'>
                 {text('labels.submit')}
                 {!isPending && <Send />}
                 {isPending && <LoaderCircle className='animate-spin' />}

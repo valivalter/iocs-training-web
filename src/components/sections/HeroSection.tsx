@@ -64,7 +64,7 @@ const HeroSection = () => {
         <div className='mb-[5vh] mt-4 flex flex-wrap items-center justify-center gap-4'>
           <Reveal delay={0.4}>
             <Link href='/apply'>
-              <Button variant='primary' size='lg'>
+              <Button variant='primary' size='lg' className='bg-gradient-to-br from-primary to-secondary'>
                 {text('cta')}
                 <Rocket />
               </Button>

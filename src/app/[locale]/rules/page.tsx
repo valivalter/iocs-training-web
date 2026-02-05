@@ -41,7 +41,7 @@ const RulesPage = () => {
             variant='secondary'
             size='lg'
             className={`
-              flex items-center gap-2 bg-gradient-to-r from-primary to-secondary font-bold transition-transform
+              flex items-center gap-2 bg-gradient-to-br from-primary to-secondary font-bold transition-transform
 
               hover:scale-105
             `}
