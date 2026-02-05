@@ -9,7 +9,7 @@ export async function sendEmail(options: SendMailOptions) {
   try {
     await resend.emails.send({
       from: `${process.env.EMAIL_FROM_NAME} <${process.env.EMAIL_FROM_ADDRESS}>`,
-      to: Array.isArray(options.to) ? options.to : [options.to],
+      to: options.to,
       subject: options.subject,
       html: options.html,
       replyTo: options.replyTo || process.env.EMAIL_FROM_ADDRESS,
