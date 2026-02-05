@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
     /* config options here */
     turbopack: {
         // ...
-      },
+    },
 };
 
 export default withNextIntl(nextConfig);

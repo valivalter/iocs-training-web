@@ -31,7 +31,7 @@ export default function WelcomeEmail({ name, locale }: { name: string; locale: s
           theme: {
             extend: {
               colors: {
-                brand: '#055c55',
+                brand: '#6b2d7a',
                 offwhite: '#fafbfb',
               },
               spacing: {
