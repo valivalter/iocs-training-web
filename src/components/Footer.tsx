@@ -1,16 +1,35 @@
-import { Facebook, Globe, Instagram } from 'lucide-react';
+'use client';
+
+import { Facebook, Globe, Instagram, Turtle } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { motion, useInView } from 'framer-motion';
 
 import { Link } from '@/i18n/routing';
+import { toast } from '@/hooks/use-toast';
 
 const Footer = () => {
   const text = useTranslations('Footer');
   const locale = useLocale();
   const rulesPath = `/documents/rules/house-rules-${locale}.pdf`;
   const privacyPath = `/documents/privacy/privacy-policy-${locale}.pdf`;
+  const [showTurtle, setShowTurtle] = useState(false);
+  const footerRef = useRef<HTMLElement>(null);
+  const isInView = useInView(footerRef);
+
+  useEffect(() => {
+    if (isInView) {
+      const timer = setTimeout(() => {
+        setShowTurtle(true);
+      }, 40000);
+
+      return () => clearTimeout(timer);
+    } else {
+      setShowTurtle(false);
+    }
+  }, [isInView]);
   return (
-    <footer className='bg-primary/20 p-8'>
+    <footer ref={footerRef} className='bg-primary/20 p-8'>
       <div className='container mx-auto flex flex-wrap justify-between'>
         <div
           className={`
@@ -89,23 +108,38 @@ const Footer = () => {
             >
               <Instagram className='h-6 w-6' />
             </a>
+            {showTurtle && (
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.0 }}
+                onClick={() => {
+                  toast({
+                    title: 'Hurrá! Megtaláltad Tökmagot!🐢',
+                    description: '',
+                  });
+                }}
+              >
+                <Turtle className='h-6 w-6' />
+              </motion.span>
+            )}
           </div>
         </div>
       </div>
       <div className='mt-20 text-center text-muted-foreground'>
         <p>
           Developed with ❤️ by{' '}
-          <a className='hover:underline' href='https://github.com/balint-kiraly'>
-            Bálint Király
-          </a>{' '}
-          |{' '}
-          <a className='hover:underline' href='https://github.com/nagytamas8'>
-            Tamás Nagy
-          </a>{' '}
-          |{' '}
           <a className='hover:underline' href='https://github.com/valivalter'>
             Valter Váli
           </a>
+          {' (2026) | '}
+          <a className='hover:underline' href='https://github.com/balint-kiraly'>
+            Bálint Király
+          </a>{' '}
+          &{' '}
+          <a className='hover:underline' href='https://github.com/nagytamas8'>
+            Tamás Nagy
+          </a>{' (2025)'}
         </p>
       </div>
     </footer>
