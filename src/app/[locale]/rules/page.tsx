@@ -1,11 +1,11 @@
 'use client';
 
-import { Download } from 'lucide-react';
-import { useLocale, useTranslations } from 'next-intl';
 import React from 'react';
 
+import { Download, PawPrint } from 'lucide-react';
+import { useLocale, useTranslations } from 'next-intl';
+
 import { Button } from '@/components/ui/button';
-import { PawPrint } from 'lucide-react';
 import { ToastAction } from '@/components/ui/toast';
 import { toast } from '@/hooks/use-toast';
 

@@ -1,12 +1,13 @@
 'use client';
 
+import React, { useEffect, useRef, useState } from 'react';
+
+import { motion, useInView } from 'framer-motion';
 import { Facebook, Globe, Instagram, Turtle } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
-import React, { useEffect, useRef, useState } from 'react';
-import { motion, useInView } from 'framer-motion';
 
-import { Link } from '@/i18n/routing';
 import { toast } from '@/hooks/use-toast';
+import { Link } from '@/i18n/routing';
 
 const Footer = () => {
   const text = useTranslations('Footer');
@@ -139,7 +140,8 @@ const Footer = () => {
           &{' '}
           <a className='hover:underline' href='https://github.com/nagytamas8'>
             Tamás Nagy
-          </a>{' (2025)'}
+          </a>
+          {' (2025)'}
         </p>
       </div>
     </footer>

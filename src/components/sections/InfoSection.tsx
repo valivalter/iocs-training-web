@@ -1,5 +1,6 @@
-import { Calendar1, Ruler, Puzzle, Zap, HandCoins, Repeat } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+
+import { Calendar1, Ruler, Puzzle, Zap, HandCoins, Repeat } from 'lucide-react';
 
 import { Reveal } from '@/components/ui/Reveal';
 

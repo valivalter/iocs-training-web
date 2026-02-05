@@ -6,7 +6,7 @@ import React from 'react';
 
 import { Button } from '@/components/ui/button';
 import Countdown from '@/components/ui/Countdown';
-import { Dialog, DialogContent, DialogTitle, VisuallyHidden } from '@/components/ui/dialog'; 
+import { Dialog, DialogContent, DialogTitle, VisuallyHidden } from '@/components/ui/dialog';
 import { Reveal } from '@/components/ui/Reveal';
 import ScrollButton from '@/components/ui/ScrollButton';
 import VimeoPlayer from '@/components/ui/VimeoPlayer';
@@ -81,7 +81,9 @@ const HeroSection = ({ promoVideoVimeoId, eventStartDatetime }: HeroSectionProps
           </Reveal>
           <Reveal delay={0.5}>
             <Button
-              variant='outline' size='lg' className='bg-gradient-to-tr from-amber-500/50 to-amber-600'
+              variant='outline'
+              size='lg'
+              className='bg-gradient-to-tr from-amber-500/50 to-amber-600'
               onClick={() => setIsDialogOpen(true)}
             >
               <Gift className='!h-5 !w-5' />
