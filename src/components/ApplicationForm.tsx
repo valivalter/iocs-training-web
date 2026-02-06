@@ -112,7 +112,7 @@ export const ApplicationForm = ({ deadline }: { deadline: Date | null }) => {
           title: text('success.title'),
           description: text('success.description'),
           action: (
-            <ToastAction altText='Dismiss Notification' className='text-primary'>
+            <ToastAction altText='Dismiss Notification' className='text-green-500'>
               <Check />
             </ToastAction>
           ),

@@ -79,15 +79,9 @@ export const ContactSection = () => {
         ))}
       </div>
       <Reveal>
-        <Card
-          className={`
-            mx-auto mt-10 flex w-fit flex-col items-center gap-8 bg-background p-6
-
-            sm:flex-row
-          `}
-        >
+        <Card className='mx-auto mt-10 flex w-fit items-center gap-6 bg-background p-6'>
           <CardHeader className='p-0'>
-            <CardTitle className='text-2xl'>{text('send-message')}</CardTitle>
+            <CardTitle className='text-center text-2xl'>{text('send-message')}</CardTitle>
           </CardHeader>
           <CardContent className='w-fit p-0'>
             <a href='mailto:kepzes@iocs.hu' target='_blank' rel='noopener noreferrer' aria-label='Mail'>

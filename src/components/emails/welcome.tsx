@@ -120,7 +120,7 @@ export default function WelcomeEmail({ name, locale }: { name: string; locale: s
                   </>
                 ) : (
                   <>
-                    For further training sessions please <strong>bring your own liquid and reusable cup</strong>, your
+                    For further training sessions please <strong>bring your own drink and reusable cup</strong>, your
                     cheerfulness and enthusiasm! Moreover, the first training session will shed light on the date of the
                     future sessions therefore make sure to bring your calendar or notebook!
                   </>
