@@ -1,6 +1,5 @@
 'use server';
 
-import { z } from 'zod';
 import { FormSchema } from '@/lib/formValidation';
 import { Diet, Prisma, University } from '@prisma/client';
 import { prisma } from '@/lib/prisma';
