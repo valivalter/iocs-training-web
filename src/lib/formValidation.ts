@@ -33,6 +33,7 @@ export const letters = [
 export const diets = ['Normal', 'Vegetarian', 'Vegan', 'LactoseFree', 'GlutenFree', 'Other'] as const;
 export const languageCertificateLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
 
+// eslint-disable-next-line no-unused-vars
 export const createFormSchema = (text: (_key: string) => string) =>
   z
   .object({
