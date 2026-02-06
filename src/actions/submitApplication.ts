@@ -1,7 +1,7 @@
 'use server';
 
 import { z } from 'zod';
-import { formSchema } from '@/lib/formValidation';
+import { FormSchema } from '@/lib/formValidation';
 import { Diet, Prisma, University } from '@prisma/client';
 import { prisma } from '@/lib/prisma';
 import { writeToSpreadsheet } from '@/actions/spreadsheetSync';
@@ -21,7 +21,7 @@ type State =
 
 export default async function submitApplication(
   previousState: State,
-  formData: z.infer<typeof formSchema>
+  formData: FormSchema
 ): Promise<State> {
   try {
     const parsedApplication = await parseApplicationData(formData);
@@ -85,7 +85,7 @@ export default async function submitApplication(
 }
 
 export async function parseApplicationData(
-  formData: z.infer<typeof formSchema>
+  formData: FormSchema
 ): Promise<Prisma.ApplicationCreateInput> {
   const certificates: Prisma.LanguageCertificateCreateWithoutInternationalTrainingInput[] =
     formData.internationalTraining

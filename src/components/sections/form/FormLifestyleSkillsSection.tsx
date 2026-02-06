@@ -8,10 +8,10 @@ import { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessa
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Switch } from '@/components/ui/switch';
-import { diets, formSchema } from '@/lib/formValidation';
+import { diets, FormSchema } from '@/lib/formValidation';
 
 interface FormOtherSectionProps {
-  form: UseFormReturn<z.infer<typeof formSchema>>;
+  form: UseFormReturn<FormSchema>;
 }
 
 export const FormLifestyleSkillsSection: React.FC<FormOtherSectionProps> = ({ form }) => {

@@ -6,11 +6,11 @@ import { z } from 'zod';
 import { DatePicker } from '@/components/ui/date-picker';
 import { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-import { formSchema } from '@/lib/formValidation';
+import { FormSchema } from '@/lib/formValidation';
 import { dateToString, stringToDate } from '@/lib/utils';
 
 interface FormDetailsSectionProps {
-  form: UseFormReturn<z.infer<typeof formSchema>>;
+  form: UseFormReturn<FormSchema>;
 }
 
 export const FormDetailsSection: React.FC<FormDetailsSectionProps> = ({ form }) => {

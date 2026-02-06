@@ -271,7 +271,20 @@
       "title": "Error submitting your application",
       "support": "If the issue persists or you believe this is a mistake, please contact the <link>developer</link>.",
       "0": "An unknown error occurred",
-      "1": "An application with this email address or phone number has already been submitted"
+      "1": "An application with this email address or phone number has already been submitted",
+      "validation": {
+        "phoneNumber": "Invalid phone number, use international format, e.g., +1234567890",
+        "studentId": "Must be 10 digits long and start with 1",
+        "universityInvalid": "Select another university from the list",
+        "certificateLevel": "Provide the level",
+        "acceptPrivacyPolicy": "Privacy policy must be accepted",
+        "acceptRules": "Rules must be accepted",
+        "university": "Provide your university",
+        "faculty": "Faculty must be provided for the university 'SE'",
+        "drivingLicense": "You shouldn't like driving without having a driving license",
+        "customDiet": "Provide your custom diet",
+        "selectWeekend": "At least one weekend must be selected"
+      }
     },
     "success": {
       "title": "Application submitted successfully",

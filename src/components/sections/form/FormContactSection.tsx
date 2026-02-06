@@ -5,10 +5,10 @@ import { z } from 'zod';
 
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-import { formSchema } from '@/lib/formValidation';
+import { FormSchema } from '@/lib/formValidation';
 
 interface FormContactSectionProps {
-  form: UseFormReturn<z.infer<typeof formSchema>>;
+  form: UseFormReturn<FormSchema>;
 }
 
 export const FormContactSection: React.FC<FormContactSectionProps> = ({ form }) => {

@@ -33,22 +33,8 @@ export const letters = [
 export const diets = ['Normal', 'Vegetarian', 'Vegan', 'LactoseFree', 'GlutenFree', 'Other'] as const;
 export const languageCertificateLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
 
-const LanguageCertificateSchema = z
-  .object({
-    language: z.string().nonempty(),
-    level: z.enum(languageCertificateLevels).optional(),
-  })
-  .refine((data) => data.level !== undefined, {
-    message: 'Provide the level.',
-    path: ['level'],
-  });
-
-const InternationalTrainingSchema = z.object({
-  motivation: z.string().nonempty(),
-  certificates: z.array(LanguageCertificateSchema).optional(),
-});
-
-export const formSchema = z
+export const createFormSchema = (text: (key: string) => string) =>
+  z
   .object({
     firstName: z.string().nonempty(),
     lastName: z.string().nonempty(),
@@ -58,7 +44,7 @@ export const formSchema = z
       .string()
       .nonempty()
       .regex(/^\+[1-9]\d{1,14}$/, {
-        message: 'Invalid. Use international phone number format, e.g., +1234567890',
+        message: text('errors.validation.phoneNumber'),
       }),
     city: z.string().nonempty(),
     zipCode: z.string().nonempty(),
@@ -68,7 +54,7 @@ export const formSchema = z
       .string()
       .nonempty()
       .regex(/^1[0-9]{9}$/, {
-        message: 'Invalid format. Must be 10 digits long and start with 1.',
+        message: text('errors.validation.studentId'),
       }),
     birthDate: z
       .string()
@@ -92,7 +78,7 @@ export const formSchema = z
           );
         },
         {
-          message: 'Select this university from the list.',
+          message: text('errors.validation.universityInvalid'),
         }
       ),
     faculty: z.enum(faculties).optional(),
@@ -110,44 +96,64 @@ export const formSchema = z
     languages: z.array(z.string().nonempty()),
     availableAtWeekend1: z.boolean(),
     availableAtWeekend2: z.boolean(),
-    internationalTraining: InternationalTrainingSchema.optional(),
+    internationalTraining: z
+      .object({
+        motivation: z.string().nonempty(),
+        certificates: z
+          .array(
+            z
+              .object({
+                language: z.string().nonempty(),
+                level: z.enum(languageCertificateLevels).optional(),
+              })
+              .refine((data) => data.level !== undefined, {
+                message: text('errors.validation.certificateLevel'),
+                path: ['level'],
+              })
+          )
+          .optional(),
+      })
+      .optional(),
     acceptPrivacyPolicy: z.boolean().refine((data) => data, {
-      message: 'Privacy policy must be accepted.',
+      message: text('errors.validation.acceptPrivacyPolicy'),
     }),
     acceptRules: z.boolean().refine((data) => data, {
-      message: 'Rules must be accepted.',
+      message: text('errors.validation.acceptRules'),
     }),
   })
   .refine(
     (data) => data.university !== 'Other' || (data.otherUniversity !== undefined && data.otherUniversity !== ''),
     {
-      message: 'Please provide your university.',
+        message: text('errors.validation.university'),
       path: ['otherUniversity'],
     }
   )
   .refine((data) => data.university !== 'SE' || data.faculty !== undefined, {
-    message: "Faculty must be provided for the university 'SE'.",
+      message: text('errors.validation.faculty'),
     path: ['faculty'],
   })
   .refine((data) => data.drivingLicense || data.likesDriving === undefined, {
-    message: "You shouldn't like driving without having a driving license.",
+      message: text('errors.validation.drivingLicense'),
     path: ['likesDriving'],
   })
   .refine((data) => data.diet !== 'Other' || data.customDiet !== undefined, {
-    message: 'Please provide your custom diet.',
+      message: text('errors.validation.customDiet'),
     path: ['customDiet'],
   })
   .superRefine((data, ctx) => {
     if (!data.availableAtWeekend1 && !data.availableAtWeekend2) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
-        message: 'At least one weekend must be selected.',
+        message: text('errors.validation.selectWeekend'),
         path: ['availableAtWeekend1'],
       });
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
-        message: 'At least one weekend must be selected.',
+        message: text('errors.validation.selectWeekend'),
         path: ['availableAtWeekend2'],
       });
     }
   });
+
+// Type export for TypeScript inference
+export type FormSchema = z.infer<ReturnType<typeof createFormSchema>>;

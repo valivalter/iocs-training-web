@@ -43,8 +43,8 @@
     "iocs": {
       "label": "IÖCS",
       "name": "Instruktor Öntevékeny Csoport",
-      "privacy-policy": "Adatvédelmi Nyilatkozat",
-      "house-rules": "Házirend"
+      "privacy-policy": "Adatkezelési tájékoztató",
+      "house-rules": "Részvételi szabályzat"
     },
     "links": {
       "label": "Linkek",
@@ -208,7 +208,7 @@
       "certificates": "Nyelvvizsgák",
       "add-certificate": "Nyelvvizsga hozzáadása",
       "acceptRules": "Elfogadom a képzés szabályzatát",
-      "acceptPrivacyPolicy": "Elfogadom az Adatvédelmi Tájékoztatót",
+      "acceptPrivacyPolicy": "Elfogadom az adatkezelési tájékoztatót",
       "submit": "Beküldés"
     },
     "descriptions": {
@@ -218,7 +218,7 @@
       "availability": "Jelöld meg, mely hétvégéken érsz rá",
       "international": "A képzés során egy csoport angol nyelven fog indulni",
       "acceptRules": "Kijelentem, hogy elolvastam és elfogadom a 2026-os Instruktorképzés <link>szabályzatát</link>, és azokat magamra nézve kötelezőnek tartom.",
-      "acceptPrivacyPolicy": "A jelentkezésem benyújtásával megerősítem, hogy elolvastam és elfogadom a 2026-os Instruktorképzés, az Instruktor Öntevékeny Csoport és az IÖCS Egyesület <link>adatvédelmi tájékoztatóját</link>."
+      "acceptPrivacyPolicy": "A jelentkezésem benyújtásával megerősítem, hogy elolvastam és elfogadom a 2026-os Instruktorképzés, az Instruktor Öntevékeny Csoport és az IÖCS Egyesület <link>adatkezelési tájékoztatóját</link>."
     },
     "placeholders": {
       "firstName": "Keresztnév",
@@ -271,7 +271,20 @@
       "title": "Hiba történt a jelentkezésed beküldésekor",
       "support": "Ha ez továbbra is fennáll, vagy úgy gondolod, hogy hibás, kérjük, vedd fel a kapcsolatot a <link>fejlesztővel</link>.",
       "0": "Ismeretlen hiba történt",
-      "1": "Ezzel az email címmel vagy telefonszámmal már küldtek be jelentkezést"
+      "1": "Ezzel az e-mail-címmel vagy telefonszámmal már küldtek be jelentkezést",
+      "validation": {
+        "phoneNumber": "Nem megfelelő formátum. Példa: +1234567890",
+        "studentId": "Az azonosítónak 10 számjegyűnek kell lennie és 1-essel kell kezdődnie",
+        "universityInvalid": "Kérjük, válassz egy másik egyetemet a listából",
+        "certificateLevel": "Add meg a nyelvvizsga szintjét",
+        "acceptPrivacyPolicy": "Az adatkezelési tájékoztató elfogadása kötelező",
+        "acceptRules": "A szabályzat elfogadása kötelező",
+        "university": "Az egyetem megadása kötelező",
+        "faculty": "A kar megadása kötelező a Semmelweis Egyetem esetén",
+        "drivingLicense": "Nem kéne szeretned a vezetést jogosítvány nélkül",
+        "customDiet": "Az egyedi étrend megadása kötelező",
+        "selectWeekend": "Legalább egy hétvégét meg kell jelölni"
+      }
     },
     "success": {
       "title": "Sikeres Jelentkezés",

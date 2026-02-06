@@ -1,11 +1,11 @@
 'use server';
 
 import { z } from 'zod';
-import { formSchema } from '@/lib/formValidation';
+import { FormSchema } from '@/lib/formValidation';
 
 export async function createSupportMailLink(
   errorMessage: string,
-  payload: z.infer<typeof formSchema>,
+  payload: FormSchema,
   locale: string
 ): Promise<string> {
   if (!process.env.DEVELOPER_EMAIL) {

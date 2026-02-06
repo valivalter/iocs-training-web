@@ -5,10 +5,10 @@ import { z } from 'zod';
 
 import { Checkbox } from '@/components/ui/checkbox';
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { formSchema } from '@/lib/formValidation';
+import { FormSchema } from '@/lib/formValidation';
 
 interface FormAvailabilitySectionProps {
-  form: UseFormReturn<z.infer<typeof formSchema>>;
+  form: UseFormReturn<FormSchema>;
 }
 
 export const FormAvailabilitySection: React.FC<FormAvailabilitySectionProps> = ({ form }) => {

@@ -10,10 +10,10 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Switch } from '@/components/ui/switch';
 import { Textarea } from '@/components/ui/textarea';
-import { formSchema, languageCertificateLevels } from '@/lib/formValidation';
+import { FormSchema, languageCertificateLevels } from '@/lib/formValidation';
 
 interface FormInternationalSectionProps {
-  form: UseFormReturn<z.infer<typeof formSchema>>;
+  form: UseFormReturn<FormSchema>;
 }
 
 export const FormInternationalSection: React.FC<FormInternationalSectionProps> = ({ form }) => {

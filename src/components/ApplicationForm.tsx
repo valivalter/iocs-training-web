@@ -23,7 +23,7 @@ import { Form } from '@/components/ui/form';
 import { ToastAction } from '@/components/ui/toast';
 import { toast } from '@/hooks/use-toast';
 import { useRouter } from '@/i18n/routing';
-import { formSchema } from '@/lib/formValidation';
+import { createFormSchema, FormSchema } from '@/lib/formValidation';
 
 export const ApplicationForm = ({ deadline }: { deadline: Date | null }) => {
   const text = useTranslations('ApplicationForm');
@@ -40,8 +40,10 @@ export const ApplicationForm = ({ deadline }: { deadline: Date | null }) => {
   const [state, action, isPending] = useActionState(submitApplication, { status: 'initial', locale: locale });
   const router = useRouter();
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const localizedSchema = React.useMemo(() => createFormSchema(text), [text]);
+
+  const form = useForm<FormSchema>({
+    resolver: zodResolver(localizedSchema),
     defaultValues: {
       firstName: '',
       lastName: '',
@@ -96,7 +98,7 @@ export const ApplicationForm = ({ deadline }: { deadline: Date | null }) => {
     z.setErrorMap(customErrorMap);
   }, [text]);
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  function onSubmit(values: FormSchema) {
     startTransition(() => {
       action(values);
     });

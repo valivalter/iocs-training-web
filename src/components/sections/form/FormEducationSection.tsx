@@ -7,10 +7,10 @@ import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/comp
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Slider } from '@/components/ui/slider';
-import { faculties, formSchema, letters, universities } from '@/lib/formValidation';
+import { faculties, FormSchema, letters, universities } from '@/lib/formValidation';
 
 interface FormStudiesSectionProps {
-  form: UseFormReturn<z.infer<typeof formSchema>>;
+  form: UseFormReturn<FormSchema>;
 }
 
 export const FormEducationSection: React.FC<FormStudiesSectionProps> = ({ form }) => {
