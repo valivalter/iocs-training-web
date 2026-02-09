@@ -20,6 +20,7 @@
     "heading-sm": "Várunk az Instruktorképzésen!",
     "subheading": "Légy részese egy felejthetetlen élménynek, és építs életre szóló kapcsolatokat.",
     "cta": "Jelentkezz most",
+    "cta-video": "Nézd meg a videót",
     "cta-surprise": "Meglepetés",
     "dialog-message": "Belenéztél!"
   },
@@ -73,7 +74,7 @@
     },
     "card-4": {
       "title": "Képzéshétvége",
-      "description": "A képzés során <em>két egész hétvégés alkalomra</em> is sor kerül, tele jobbnál jobb programokkal."
+      "description": "A képzés során két <em>egész hétvégés</em> alkalomra is sor kerül, tele jobbnál jobb programokkal."
     },
     "card-5": {
       "title": "Anyagi vonzat",

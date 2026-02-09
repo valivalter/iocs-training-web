@@ -15,6 +15,8 @@ const Header = () => {
   const path = usePathname();
 
   const navItems = ['home', 'rules', 'contact'];
+  
+  const isHomePage = path === '/';
 
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -32,7 +34,13 @@ const Header = () => {
 
   return (
     <>
-      <div className='absolute left-0 top-0 z-20 h-36 w-[100%] bg-gradient-to-b from-primary/90 to-transparent' />
+      <div
+        className={`
+          absolute left-0 top-0 z-20 h-36 w-[100%] bg-gradient-to-b to-transparent
+
+          ${isHomePage ? 'from-primary/20' : 'from-primary'}
+        `}
+      />
       <header
         className={`
           fixed z-40 w-[100%] min-w-[300px] p-4 text-white transition-all duration-1000
