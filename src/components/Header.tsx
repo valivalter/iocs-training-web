@@ -16,6 +16,8 @@ const Header = () => {
 
   const navItems = ['home', 'rules', 'contact'];
 
+  const isHomePage = path === '/';
+
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -32,7 +34,13 @@ const Header = () => {
 
   return (
     <>
-      <div className='absolute left-0 top-0 z-20 h-36 w-[100%] bg-gradient-to-b from-primary to-transparent' />
+      <div
+        className={`
+          absolute left-0 top-0 z-20 h-36 w-[100%] bg-gradient-to-b to-transparent
+
+          ${isHomePage ? 'from-primary/20' : 'from-primary'}
+        `}
+      />
       <header
         className={`
           fixed z-40 w-[100%] min-w-[300px] p-4 text-white transition-all duration-1000
@@ -82,7 +90,7 @@ const Header = () => {
                 md:block
               `}
             >
-              <Button variant='secondary'>
+              <Button variant='secondary' className='bg-gradient-to-br from-primary to-secondary'>
                 {text('apply')}
                 <Rocket />
               </Button>
@@ -113,7 +121,7 @@ const Header = () => {
                 </nav>
                 <SheetClose asChild>
                   <Link href='/apply'>
-                    <Button variant='primary'>
+                    <Button variant='primary' className='bg-gradient-to-br from-primary to-secondary'>
                       {text('apply')}
                       <Rocket />
                     </Button>

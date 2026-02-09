@@ -1,10 +1,12 @@
 'use client';
 
-import { Download } from 'lucide-react';
+import { Download, PawPrint } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import React from 'react';
 
 import { Button } from '@/components/ui/button';
+import { ToastAction } from '@/components/ui/toast';
+import { toast } from '@/hooks/use-toast';
 
 const RulesPage = () => {
   const text = useTranslations('Rules');
@@ -30,7 +32,25 @@ const RulesPage = () => {
       >
         {Array.from({ length: 20 }).map((_, index) => (
           <li key={index} className='break-words text-justify'>
-            {text(`rules.rule-${index + 1}`)}
+            {text.rich(`rules.rule-${index + 1}`, {
+              bufe: (chunks) => (
+                <span
+                  onClick={() => {
+                    toast({
+                      title: 'Megtaláltad Szamit! 🐩',
+                      description: '',
+                      action: (
+                        <ToastAction altText='Dismiss Notification'>
+                          <PawPrint />
+                        </ToastAction>
+                      ),
+                    });
+                  }}
+                >
+                  {chunks}
+                </span>
+              ),
+            })}
           </li>
         ))}
       </ol>
@@ -41,7 +61,7 @@ const RulesPage = () => {
             variant='secondary'
             size='lg'
             className={`
-              flex items-center gap-2 bg-gradient-to-r from-primary to-secondary font-bold transition-transform
+              flex items-center gap-2 bg-gradient-to-br from-primary to-secondary font-bold transition-transform
 
               hover:scale-105
             `}

@@ -1,3 +1,5 @@
+'use client';
+
 import { ChevronDown, Play, Rocket } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import React from 'react';
@@ -9,7 +11,12 @@ import ScrollButton from '@/components/ui/ScrollButton';
 import VimeoPlayer from '@/components/ui/VimeoPlayer';
 import { Link } from '@/i18n/routing';
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  promoVideoVimeoId?: number;
+  eventStartDatetime?: string;
+}
+
+const HeroSection = ({ promoVideoVimeoId, eventStartDatetime }: HeroSectionProps) => {
   const text = useTranslations('HeroSection');
   const locale = useLocale();
 
@@ -24,7 +31,7 @@ const HeroSection = () => {
             -translate-x-1/2 -translate-y-1/2
           `}
         >
-          <VimeoPlayer id={Number(process.env.PROMO_VIDEO_VIMEO_ID)} autoplay={true} />
+          <VimeoPlayer id={promoVideoVimeoId ?? 0} autoplay={true} />
         </div>
 
         <div className='absolute inset-0 bg-gradient-to-b from-primary/80 to-transparent to-30%' />
@@ -58,13 +65,13 @@ const HeroSection = () => {
 
       <div className='flex flex-col items-center'>
         <Reveal delay={0.2}>
-          <Countdown targetDate={process.env.APPLICATION_DEADLINE ?? new Date().toDateString()} />
+          <Countdown targetDate={eventStartDatetime ?? new Date().toDateString()} />
         </Reveal>
 
         <div className='mb-[5vh] mt-4 flex flex-wrap items-center justify-center gap-4'>
           <Reveal delay={0.4}>
             <Link href='/apply'>
-              <Button variant='primary' size='lg'>
+              <Button variant='primary' size='lg' className='bg-gradient-to-br from-primary to-secondary'>
                 {text('cta')}
                 <Rocket />
               </Button>

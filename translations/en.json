@@ -20,7 +20,9 @@
     "heading-sm": "Welcome to the Instructor Training!",
     "subheading": "Be part of an unforgettable experience and make lifelong connections.",
     "cta": "Apply Now",
-    "cta-video": "Watch the Video"
+    "cta-video": "Watch the video",
+    "cta-surprise": "Surprise",
+    "dialog-message": "You looked!"
   },
   "Countdown": {
     "heading": "The training starts in",
@@ -54,7 +56,8 @@
     },
     "social": {
       "label": "Follow Us"
-    }
+    },
+    "surprise-tortoise": "Hooray! You found Tökmag!🐢"
   },
   "Info": {
     "card-1": {
@@ -88,7 +91,7 @@
     "text": {
       "f-box-p1": "During the training you will dive into the IÖCS together for 8 weeks.",
       "f-box-p2": "You should expect one session per week, starting around 17-18 hours.",
-      "f-box-p3": "After the Tali there is always an after where you can have a more informal chat.",
+      "f-box-p3": "After the Tali (session) there is always an After where you can have a more informal chat.",
       "f-box-p4": "There will also be two weekends during the week where you can deepen your relationship.",
       "f-box-p5": "In the meantime, you can find out how the IÖCS works, what events we have and what opportunities you will have.",
       "f-box-p6": "Come and experience the Instructor Experience yourself!",
@@ -112,20 +115,20 @@
       "rule-6": "During the Instructor Training, no activities that may pose a fire hazard, accident risk, or any health danger are allowed.",
       "rule-7": "Equipment, tools, etc. on the premises used during the Instructor Training may be used by everyone, but at their own risk. The user shall be liable for any damage resulting from improper use. The organizers are not responsible for any improper use of the equipment or for any personal injury, accidents, or damages. Anyone who unlawfully causes damage to the venue’s valuables, equipment, or assets shall be required to compensate for the damage.",
       "rule-8": "Everyone participates in the Instructor Training voluntarily, and no part of it (e.g. tasks) is mandatory for anyone. If any part of the organized program conflicts with the participant's beliefs or values, they are not obligated to take part. The program does not include tasks with references to sexuality. Participation influenced by peer pressure is not considered voluntary. The training can be stopped at any time, but the participant must inform the organizers of their decision.",
-      "rule-9": "The programmes, participants' behavior, and communication must align with the University's values and Code of Ethics (http://semmelweis.hu/jogigfoig/files/2017/12/Etikai_Kodex_hataly_2017XII09.pdf), the Rules of Organisation and Operation of the Group (http://iocs.hu/magunkrol/szmsz), and the applicable Hungarian laws (available at www.njt.hu)",
+      "rule-9": "The programmes, participants' behavior, and communication must align with the University's values and Code of Ethics (https://semmelweis.hu/jogigfoig/files/2025/08/Etikai_kodex_hataly_20250802.pdf), the Rules of Organisation and Operation of the Group (https://iocs.hu/magunkrol/szmsz), and the applicable Hungarian laws (available at https://njt.hu/)",
       "rule-10": "During or after the end of the Instructor Training, participants may address their complaints and comments to the Leaderboard of the Group of Unprompted Instructors in person, by phone, or in writing to vezetoseg@iocs.hu. Additionally, they may contact the Rector's Secretariat of the University (rektor@semmelweis-univ.hu, Budapest 1085, Üllői út 26. 1st floor 101, +36 1 317 2400), even through anonymous notifications. The University will investigate all complaints and, if necessary, involve the relevant authorities. Both IÖCS and the University handle all applicants' data confidentially and will not disclose it to anyone.",
       "rule-11": "The participant shall immediately notify the responsible organizer or group leader in case of any accidents, injuries, or extraordinary events!",
       "rule-12": "The participant is obliged to report any acute, chronic, or temporary illnesses, allergies, and provide printed medication instructions. The organizers will handle this information with strict confidentiality and will not share it with third parties, except for the group leader. This rule is necessary to prevent potential emergencies.",
       "rule-13": "The participants acknowledge that in the event of a reasonable suspicion of non-compliance with these Rules and Regulations or of a crime or misconduct, those responsible for security have the right to detain the participant concerned until the necessary legal consequences have been determined. In the event of a crime, the perpetrator may be apprehended by anyone and must be reported to the police (see Section 127 (3) of Act XIX of 1998). The participants expressly acknowledge that the potential application of this measure against them does not constitute a restriction or violation of their freedom of movement.",
       "rule-14": "In the event of any violation of any norm and/or law (within 5 months of the act being committed), the University shall initiate disciplinary proceedings. The disciplinary penalties may include: admonishment, severe admonishment, reduction or withdrawal of allowances and benefits defined in the remuneration and allowance regulations for a period of up to six months, suspension from studies for a fixed period, not exceeding two semesters, expulsion from the university or other higher education institution.",
-      "rule-15": "Members of the security staff may search the suspected person and their luggage in the event of suspected possession or consumption of drugs, or any other criminal act. The procedure shall involve the person concerned, the responsible security personnel conducting the search, and Orsolya Sisa (president of the Group).",
+      "rule-15": "Members of the security staff may search the suspected person and their luggage in the event of suspected possession or consumption of drugs, or any other criminal act. The procedure shall involve the person concerned, the responsible security personnel conducting the search, and Zsófia Sebeszta (president of the Group).",
       "rule-16": "During the course of the training, it is prohibited to take, record, store, or publish any photo, sound recording, film, motion picture, video, or any other medium (including but not limited to: Internet, Facebook, Flickr, Instagram, Tumblr, X, YouTube, TikTok, etc.) that infringes upon anyone's person, rights, or legitimate interests. Storing or publishing such photos and recordings is also prohibited after the end of the Instructor Training.",
       "rule-17": "The above applies equally to all participants of the Instructor Training.",
       "rule-18": "I hereby consent to the audio and video recording of myself at the event, with the recordings being stored by the organizers, used for their operations, and provided to the University. I do not claim any compensation for the storage or future use of the recordings.",
       "rule-19": "If I become aware of any recording that contains content offensive to me or others, I will promptly notify the event organizers so that they can take action to investigate and, if necessary, delete the reported content.",
       "rule-20": "According to section 65 (3) a) of Act CXII of 2011 on informational self-determination and freedom of information (Infotv.), NAIH does not maintain records of this data processing."
     },
-    "download": "Download the Rules"
+    "download": "Download the rules"
   },
   "ContactSection": {
     "heading": "Contacts",
@@ -270,7 +273,20 @@
       "title": "Error submitting your application",
       "support": "If the issue persists or you believe this is a mistake, please contact the <link>developer</link>.",
       "0": "An unknown error occurred",
-      "1": "An application with this email address or phone number has already been submitted"
+      "1": "An application with this email address or phone number has already been submitted",
+      "validation": {
+        "phoneNumber": "Invalid phone number, use international format, e.g., +1234567890",
+        "studentId": "Must be 10 digits long and start with 1",
+        "universityInvalid": "Select another university from the list",
+        "certificateLevel": "Provide the level",
+        "acceptPrivacyPolicy": "Privacy policy must be accepted",
+        "acceptRules": "Rules must be accepted",
+        "university": "Provide your university",
+        "faculty": "Faculty must be provided for the university 'SE'",
+        "drivingLicense": "You shouldn't like driving without having a driving license",
+        "customDiet": "Provide your custom diet",
+        "selectWeekend": "At least one weekend must be selected"
+      }
     },
     "success": {
       "title": "Application submitted successfully",

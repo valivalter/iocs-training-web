@@ -15,7 +15,7 @@ const ApplicationSection = () => {
       <Reveal>
         <Card
           className={`
-            mx-auto flex w-fit flex-col items-start gap-8 border-none p-8
+            mx-auto flex w-fit flex-col items-center gap-8 border-none p-8
 
             sm:flex-row sm:items-center
           `}

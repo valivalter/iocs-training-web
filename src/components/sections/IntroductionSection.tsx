@@ -6,19 +6,15 @@ import VerticalCarousel from '@/components/ui/VerticalCarousel';
 const IntroductionSection = () => {
   const text = useTranslations('IntroductionSection');
   const images = [
-    { src: '/images/groups/Bausz.png', width: 4032, height: 3024 },
-    { src: '/images/groups/Csengu.png', width: 940, height: 788 },
-    { src: '/images/groups/Della.jpg', width: 2224, height: 1668 },
-    { src: '/images/groups/Macsi.png', width: 4032, height: 3024 },
-    { src: '/images/groups/Orban.png', width: 2000, height: 1414 },
-    { src: '/images/groups/Orsi.png', width: 2000, height: 1545 },
-    { src: '/images/groups/Podonyi.jpg', width: 4032, height: 3024 },
-    { src: '/images/groups/Reka.jpg', width: 2048, height: 1448 },
-    { src: '/images/groups/Sara.jpg', width: 1425, height: 1080 },
-    { src: '/images/groups/Tami.jpg', width: 1642, height: 900 },
-    { src: '/images/groups/Tege.jpg', width: 2048, height: 1536 },
-    { src: '/images/groups/Vozi.png', width: 1640, height: 924 },
-    { src: '/images/groups/Zsombor.jpg', width: 1242, height: 702 },
+    { src: '/images/groups/Zso.png', width: 2048, height: 1536 },
+    { src: '/images/groups/Sisa.png', width: 2048, height: 1536 },
+    { src: '/images/groups/Petra.png', width: 4000, height: 3000 },
+    { src: '/images/groups/Oliv.jpg', width: 1668, height: 1251 },
+    { src: '/images/groups/Meszaros.jpg', width: 2334, height: 1880 },
+    { src: '/images/groups/Lalak.png', width: 2048, height: 1536 },
+    { src: '/images/groups/Kisi.png', width: 878, height: 646 },
+    { src: '/images/groups/Gyomber.jpg', width: 1242, height: 791 },
+    { src: '/images/groups/Almos.jpg', width: 1251, height: 910 },
   ];
 
   return (

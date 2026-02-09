@@ -15,7 +15,10 @@ export default async function Home({ params }: Readonly<{ params: Promise<{ loca
 
   return (
     <main>
-      <HeroSection />
+      <HeroSection
+        promoVideoVimeoId={process.env.PROMO_VIDEO_VIMEO_ID ? Number(process.env.PROMO_VIDEO_VIMEO_ID) : undefined}
+        eventStartDatetime={process.env.EVENT_START_DATETIME ?? undefined}
+      />
       <InfoSection />
       <div className='container mx-auto px-4'>
         <div

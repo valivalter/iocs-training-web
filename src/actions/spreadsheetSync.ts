@@ -40,13 +40,13 @@ const columnNames = [
   'Vezetéknév',
   'Keresztnév',
   'Becenév',
-  'E-mail cím',
+  'E-mail-cím',
   'Telefonszám',
   'Irányítószám',
   'Város',
   'Lakcím',
-  'Személyi igazolvány szám',
-  'Diákigazolvány szám',
+  'Személyi igazolvány száma',
+  'Diákigazolvány-szám',
   'Születési dátum',
   'Születési hely',
   'Anyja neve',
@@ -159,6 +159,6 @@ async function parseApplication(
       .sort((a, b) => a.language.localeCompare(b.language))
       .map((certificate) => `${certificate.language} (${certificate.level})`)
       .join(', '),
-    submittedAt: format(application.createdAt, 'yyyy. MM. dd. HH:mm:ss'),
+    submittedAt: format(application.createdAt, 'yyyy.MM.dd. HH:mm:ss'),
   };
 }

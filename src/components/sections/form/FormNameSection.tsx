@@ -1,14 +1,13 @@
 import { useLocale, useTranslations } from 'next-intl';
 import React from 'react';
 import { UseFormReturn } from 'react-hook-form';
-import { z } from 'zod';
 
 import { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-import { formSchema } from '@/lib/formValidation';
+import { FormSchema } from '@/lib/formValidation';
 
 interface FormNameSectionProps {
-  form: UseFormReturn<z.infer<typeof formSchema>>;
+  form: UseFormReturn<FormSchema>;
 }
 
 export const FormNameSection: React.FC<FormNameSectionProps> = ({ form }) => {

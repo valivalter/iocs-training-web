@@ -2,16 +2,15 @@ import { useTranslations } from 'next-intl';
 import React from 'react';
 import { UseFormReturn } from 'react-hook-form';
 import { TagsInput } from 'react-tag-input-component';
-import { z } from 'zod';
 
 import { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Switch } from '@/components/ui/switch';
-import { diets, formSchema } from '@/lib/formValidation';
+import { diets, FormSchema } from '@/lib/formValidation';
 
 interface FormOtherSectionProps {
-  form: UseFormReturn<z.infer<typeof formSchema>>;
+  form: UseFormReturn<FormSchema>;
 }
 
 export const FormLifestyleSkillsSection: React.FC<FormOtherSectionProps> = ({ form }) => {

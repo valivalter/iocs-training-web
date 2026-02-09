@@ -2,7 +2,6 @@ import { Plus, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 import { UseFormReturn } from 'react-hook-form';
-import { z } from 'zod';
 
 import { Button } from '@/components/ui/button';
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
@@ -10,10 +9,10 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Switch } from '@/components/ui/switch';
 import { Textarea } from '@/components/ui/textarea';
-import { formSchema, languageCertificateLevels } from '@/lib/formValidation';
+import { FormSchema, languageCertificateLevels } from '@/lib/formValidation';
 
 interface FormInternationalSectionProps {
-  form: UseFormReturn<z.infer<typeof formSchema>>;
+  form: UseFormReturn<FormSchema>;
 }
 
 export const FormInternationalSection: React.FC<FormInternationalSectionProps> = ({ form }) => {
@@ -52,7 +51,6 @@ export const FormInternationalSection: React.FC<FormInternationalSectionProps> =
                       }}
                     />
                   </FormControl>
-                  <FormMessage />
                 </FormItem>
 
                 {field.value !== undefined && (
@@ -65,7 +63,7 @@ export const FormInternationalSection: React.FC<FormInternationalSectionProps> =
                         <FormItem>
                           <FormLabel>{text('labels.motivation')}</FormLabel>
                           <FormControl>
-                            <Textarea {...field} placeholder={text('placeholders.motivation')} />
+                            <Textarea {...field} placeholder={text('placeholders.motivation')} className='text-sm' />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
