@@ -67,7 +67,7 @@ export default function WelcomeEmail({ name, locale }: { name: string; locale: s
                     </>
                   ) : (
                     <>
-                      We are pleased that you have applied for the <strong>2026 Instructor training</strong>!
+                      We are pleased that you have applied for the <strong>2026 Instructor Training</strong>!
                     </>
                   )}
                 </Text>
@@ -75,7 +75,7 @@ export default function WelcomeEmail({ name, locale }: { name: string; locale: s
                 <Text className='text-base'>
                   {hungarian
                     ? 'Szeretnénk néhány fontos információt megosztani Veled:'
-                    : 'We would like to share a few significant details involving the event:'}
+                    : 'We would like to share a few significant details about the event:'}
                 </Text>
               </Row>
             </Section>
@@ -85,8 +85,8 @@ export default function WelcomeEmail({ name, locale }: { name: string; locale: s
                 {hungarian ? (
                   <>
                     A megnyitó <strong>február 25-én, 17 órakor</strong> kezdődik. Arra szeretnénk kérni Téged, hogy{' '}
-                    <strong>16:45-re érkezz</strong> a <strong>Nagyvárad téri Elméleti Tömb Dísztermébe</strong>
-                    (1089 Budapest, Nagyvárad tér 4.), hogy a megnyitót időben tudjuk kezdeni.
+                    <strong>16:45-re érkezz</strong> a <strong>Nagyvárad téri Elméleti Tömb Dísztermébe</strong> (1089
+                    Budapest, Nagyvárad tér 4.), hogy a megnyitót időben tudjuk kezdeni.
                   </>
                 ) : (
                   <>
@@ -105,7 +105,7 @@ export default function WelcomeEmail({ name, locale }: { name: string; locale: s
                   </>
                 ) : (
                   <>
-                    After the opening ceremony, the first training session will take place so please be prepared that
+                    After the opening ceremony, the first training session will take place, so please be prepared that
                     the program <strong>lasts for a few hours</strong>. In return, we have put together thrilling
                     programs and surprises just for you!
                   </>
@@ -120,9 +120,9 @@ export default function WelcomeEmail({ name, locale }: { name: string; locale: s
                   </>
                 ) : (
                   <>
-                    For further training sessions please <strong>bring your own drink and reusable cup</strong>, your
+                    For further training sessions, please <strong>bring your own drink and reusable cup</strong>, your
                     cheerfulness and enthusiasm! Moreover, the first training session will shed light on the date of the
-                    future sessions therefore make sure to bring your calendar or notebook!
+                    future sessions, therefore make sure to bring your calendar or notebook!
                   </>
                 )}
               </li>

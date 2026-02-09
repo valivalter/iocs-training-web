@@ -55,7 +55,8 @@
     },
     "social": {
       "label": "Kövess Minket"
-    }
+    },
+    "surprise-tortoise": "Hurrá! Megtaláltad Tökmagot!🐢"
   },
   "Info": {
     "card-1": {
@@ -174,7 +175,7 @@
       "education": "Tanulmányok",
       "preferences": "Életmód és készségek",
       "availability": "Ráérés",
-      "international": "Külföldi képzés"
+      "international": "Nemzetközi képzés"
     },
     "labels": {
       "firstName": "Keresztnév",
@@ -217,7 +218,7 @@
       "languages": "Add meg a nyelveket szóközzel elválasztva.",
       "availability": "Jelöld meg, mely hétvégéken érsz rá",
       "international": "A képzés során egy csoport angol nyelven fog indulni",
-      "acceptRules": "Kijelentem, hogy elolvastam és elfogadom a 2026-os Instruktorképzés <link>szabályzatát</link>, és azokat magamra nézve kötelezőnek tartom.",
+      "acceptRules": "Kijelentem, hogy elolvastam és elfogadom a 2026-os Instruktorképzés <link>szabályzatát</link>, és a szabályokat magamra nézve kötelezőnek tartom.",
       "acceptPrivacyPolicy": "A jelentkezésem benyújtásával megerősítem, hogy elolvastam és elfogadom a 2026-os Instruktorképzés, az Instruktor Öntevékeny Csoport és az IÖCS Egyesület <link>adatkezelési tájékoztatóját</link>."
     },
     "placeholders": {
@@ -269,7 +270,7 @@
     "errors": {
       "required": "Kötelező",
       "title": "Hiba történt a jelentkezésed beküldésekor",
-      "support": "Ha ez továbbra is fennáll, vagy úgy gondolod, hogy hibás, kérjük, vedd fel a kapcsolatot a <link>fejlesztővel</link>.",
+      "support": "Ha ez továbbra is fennáll, vagy úgy gondolod, hogy ez egy tévedés, kérjük, vedd fel a kapcsolatot a <link>fejlesztővel</link>.",
       "0": "Ismeretlen hiba történt",
       "1": "Ezzel az e-mail-címmel vagy telefonszámmal már küldtek be jelentkezést",
       "validation": {

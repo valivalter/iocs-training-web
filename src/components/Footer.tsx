@@ -115,7 +115,7 @@ const Footer = () => {
                 transition={{ duration: 1.0 }}
                 onClick={() => {
                   toast({
-                    title: 'Hurrá! Megtaláltad Tökmagot!🐢',
+                    title: text('surprise-tortoise'),
                     description: '',
                   });
                 }}
