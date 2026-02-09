@@ -12,7 +12,7 @@ export async function createSupportMailLink(
   }
 
   const developerEmail = process.env.DEVELOPER_EMAIL;
-  const subject = encodeURIComponent('IÖCS Training Web 2025 | Application Submission - Unexpected Error');
+  const subject = encodeURIComponent('IÖCS Training Web 2026 | Application Submission - Unexpected Error');
   const body = encodeURIComponent(
     `${locale === 'hu' ? 'Mi történt?' : 'What happened?'}\n\n\n\nError message:\n${errorMessage}\n\nSubmitted data:\n${JSON.stringify(payload, null, 2)}\n\n${locale === 'hu' ? 'Amúgy ennyire tetszik az oldal' : 'Btw I like the website this much'}: `
   );
