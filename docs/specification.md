@@ -1,32 +1,37 @@
-# Specification for the 2025 IÖCS Training Web App
+# Specification for the 2026 IÖCS Training Web App
 
 ## Overview
 This web application is a bilingual platform designed to engage potential participants, provide information about the training, and facilitate applications. The site emphasizes modern design, usability, and responsiveness.
-
-> [!WARNING]
-> This is a v.0 specification and may not reflect the final design or features.
 
 ---
 
 ## Pages and Content
 
 ### 1. Landing Page
-- **Countdown Timer**: Displays a live countdown to the first meeting on *February 13*.
+- **Countdown Timer**: Displays a live countdown to the first meeting on *February 25*.
 - **Call-to-Action Button**: Prominently redirects users to the application form.
 - **Background Promo Video**: Engages visitors with a video showcasing the essence of the training.
 
-**Gallery Section**:
-- **Carousel** featuring pictures from previous years (autoplay enabled).
-- **Info Block**: Brief overview of the training with key highlights.
-
-**Application Section:**
-- **Title and Application Link**: Directs users to the application form.
+**Info Section**:
+- **Six informational cards** with icons covering key training details.
 
 **Promo Video Section**:
 - **Embedded video** highlighting the significance of participation.
 
-**Introduction Section:**
-- **Carousel**: Displays images of the training groups (autoplay enabled).
+**Details Section**:
+- **Two informational cards** providing overview of what to expect and training structure.
+
+**Application Section**:
+- **Title and application link** directing users to the application form.
+
+**Introduction Section**:
+- **Carousel** displaying images of the training groups (autoplay enabled).
+
+**Contact Section**:
+- **Contact information** and cards for key organizers and representatives.
+
+**Gallery Section**:
+- **Carousel** featuring pictures from previous years (autoplay enabled).
 
 ### 2. Rules Page
 - Overview of the rules and guidelines of the training.
@@ -35,8 +40,8 @@ This web application is a bilingual platform designed to engage potential partic
 - **Email**: Official contact email: *kepzes@iocs.hu*.
 - **Contact Cards**: Information and pictures of key contacts, including:
   - Organizers
-  - IÖCS President
-  - President of the Ethics Committee
+  - President of the IÖCS
+  - President of the Supervisory Board
 
 ### 4. Application Page
 - **Form**: Application form for participants.
@@ -57,24 +62,38 @@ This web application is a bilingual platform designed to engage potential partic
   - Desktop: Load time < 2 seconds.
   - Mobile: Load time < 5 seconds.
 
+### 4. Email Notifications
+- **Automatic confirmation emails** sent via Resend API upon successful application submission.
+- **Bilingual welcome emails** (Hungarian/English) with training details and important information.
+- **React Email components** for professional HTML email templates.
+
+### 5. PostgreSQL Database
+- **Application data storage** using Prisma ORM and PostgreSQL.
+- Stores complete application information including personal details, education, preferences, and international training data.
+- Supports relational data with international training and language certificate relationships.
+
+### 6. Google Sheets Integration
+- **Automatic synchronization** of submitted applications to a Google Sheet.
+- **Real-time updates** when applications are submitted.
+
 ---
 
 ## Style Guide
 
 ### Colors
-> [!WARNING]
-> Color palette requires further specification
 
 Main colors:
-- **Black**: `#000000`
-- **Red**: `#FF0000`
-- **Yellow**: `#FFFF00`
-- **Brown**: `#8B4513`
-- **White**: `#FFFFFF`
+- **Primary**: `#702878` - Purple/magenta accent color
+- **Secondary**: `#0B437D` - Blue accent color
+- **Background**: `#080A19` - Very dark blue/black background
+- **Foreground**: `#FAFAFA` - Almost white text color
+- **Destructive**: `#991C1C` - Red for error states
+
+The color system supports both dark and light themes through CSS variables.
 
 ### Fonts
-- **Text**: Montserrat, sans-serif
-- **Headings**: Spectral SC, serif
+- **Primary Font**: Geist Sans (via `next/font/google`)
+- **Monospace Font**: Geist Mono (via `next/font/google`)
 
 ---
 
