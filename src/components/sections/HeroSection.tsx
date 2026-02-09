@@ -83,7 +83,7 @@ const HeroSection = ({ promoVideoVimeoId, eventStartDatetime }: HeroSectionProps
             <Button
               variant='outline'
               size='lg'
-              className='bg-gradient-to-tr from-amber-500/50 to-amber-600'
+              className='bg-gradient-to-tr from-amber-400/50 to-amber-500'
               onClick={() => setIsDialogOpen(true)}
             >
               <Gift className='!h-5 !w-5' />

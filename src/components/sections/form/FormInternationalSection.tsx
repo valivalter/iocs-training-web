@@ -63,7 +63,7 @@ export const FormInternationalSection: React.FC<FormInternationalSectionProps> =
                         <FormItem>
                           <FormLabel>{text('labels.motivation')}</FormLabel>
                           <FormControl>
-                            <Textarea {...field} placeholder={text('placeholders.motivation')} />
+                            <Textarea {...field} placeholder={text('placeholders.motivation')} className='text-sm' />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
