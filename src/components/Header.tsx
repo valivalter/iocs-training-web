@@ -15,7 +15,7 @@ const Header = () => {
   const path = usePathname();
 
   const navItems = ['home', 'rules', 'contact'];
-  
+
   const isHomePage = path === '/';
 
   const [scrolled, setScrolled] = useState(false);
