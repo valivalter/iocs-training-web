@@ -1,12 +1,11 @@
 'use client';
 
-import { ChevronDown, Gift, Rocket } from 'lucide-react';
+import { ChevronDown, Play, Rocket } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import React from 'react';
 
 import { Button } from '@/components/ui/button';
 import Countdown from '@/components/ui/Countdown';
-import { Dialog, DialogContent, DialogTitle, VisuallyHidden } from '@/components/ui/dialog';
 import { Reveal } from '@/components/ui/Reveal';
 import ScrollButton from '@/components/ui/ScrollButton';
 import VimeoPlayer from '@/components/ui/VimeoPlayer';
@@ -20,7 +19,6 @@ interface HeroSectionProps {
 const HeroSection = ({ promoVideoVimeoId, eventStartDatetime }: HeroSectionProps) => {
   const text = useTranslations('HeroSection');
   const locale = useLocale();
-  const [isDialogOpen, setIsDialogOpen] = React.useState(false);
 
   return (
     <section
@@ -80,29 +78,14 @@ const HeroSection = ({ promoVideoVimeoId, eventStartDatetime }: HeroSectionProps
             </Link>
           </Reveal>
           <Reveal delay={0.5}>
-            <Button
-              variant='outline'
-              size='lg'
-              className='bg-gradient-to-tr from-amber-400/50 to-amber-500'
-              onClick={() => setIsDialogOpen(true)}
-            >
-              <Gift className='!h-5 !w-5' />
-              {text('cta-surprise')}
-            </Button>
+            <ScrollButton to='promo-video'>
+              <Button variant='outline' size='lg' className='bg-accent'>
+                <Play />
+                {text('cta-video')}
+              </Button>
+            </ScrollButton>
           </Reveal>
         </div>
-
-        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-          <DialogContent className='max-w-xs bg-gradient-to-tr from-amber-500/50 to-amber-600'>
-            <VisuallyHidden>
-              <DialogTitle>{text('dialog-message')}</DialogTitle>
-            </VisuallyHidden>
-            <div className='flex flex-col items-center gap-4 py-4 text-center'>
-              <span className='text-6xl'>👌</span>
-              <p className='text-foreground text-lg font-semibold'>{text('dialog-message')}</p>
-            </div>
-          </DialogContent>
-        </Dialog>
 
         <Reveal delay={3}>
           <ScrollButton to='info'>
