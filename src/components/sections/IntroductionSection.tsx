@@ -6,10 +6,15 @@ import VerticalCarousel from '@/components/ui/VerticalCarousel';
 const IntroductionSection = () => {
   const text = useTranslations('IntroductionSection');
   const images = [
-    { src: '/images/groups/1.jpg', width: 1080, height: 908 },
-    { src: '/images/groups/2.jpg', width: 1020, height: 676 },
-    { src: '/images/groups/3.jpg', width: 1080, height: 1086 },
-    { src: '/images/groups/4.jpg', width: 1006, height: 1342 },
+    { src: '/images/groups/Zso.png', width: 2048, height: 1536 },
+    { src: '/images/groups/Sisa.png', width: 2048, height: 1536 },
+    { src: '/images/groups/Petra.png', width: 4000, height: 3000 },
+    { src: '/images/groups/Oliv.jpg', width: 1668, height: 1251 },
+    { src: '/images/groups/Meszaros.jpg', width: 2334, height: 1880 },
+    { src: '/images/groups/Lalak.png', width: 2048, height: 1536 },
+    { src: '/images/groups/Kisi.png', width: 878, height: 646 },
+    { src: '/images/groups/Gyomber.jpg', width: 1242, height: 791 },
+    { src: '/images/groups/Almos.jpg', width: 1251, height: 910 },
   ];
 
   return (
