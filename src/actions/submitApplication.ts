@@ -18,10 +18,7 @@ type State =
   | null
   | undefined;
 
-export default async function submitApplication(
-  previousState: State,
-  formData: FormSchema
-): Promise<State> {
+export default async function submitApplication(previousState: State, formData: FormSchema): Promise<State> {
   try {
     const parsedApplication = await parseApplicationData(formData);
     const application = await createApplication(parsedApplication);
@@ -83,9 +80,7 @@ export default async function submitApplication(
   }
 }
 
-export async function parseApplicationData(
-  formData: FormSchema
-): Promise<Prisma.ApplicationCreateInput> {
+export async function parseApplicationData(formData: FormSchema): Promise<Prisma.ApplicationCreateInput> {
   const certificates: Prisma.LanguageCertificateCreateWithoutInternationalTrainingInput[] =
     formData.internationalTraining
       ? formData.internationalTraining.certificates
