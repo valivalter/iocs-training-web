@@ -60,9 +60,7 @@ export const FormAvailabilitySection: React.FC<FormAvailabilitySectionProps> = (
         />
       </div>
       <div className='mt-6'>
-        <p className='mb-4 text-sm'>
-          {text('descriptions.unavailableDates')}
-        </p>
+        <p className='mb-4 text-sm'>{text('descriptions.unavailableDates')}</p>
         <div
           className={`
             grid grid-cols-1 gap-x-6 gap-y-5
