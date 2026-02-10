@@ -71,6 +71,9 @@ export const ApplicationForm = ({ deadline }: { deadline: Date | null }) => {
       languages: [],
       availableAtWeekend1: false,
       availableAtWeekend2: false,
+      unavailableDate1: undefined,
+      unavailableDate2: undefined,
+      unavailableDate3: undefined,
       internationalTraining: undefined,
     },
   });

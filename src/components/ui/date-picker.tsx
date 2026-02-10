@@ -12,10 +12,18 @@ export const DatePicker = ({
   value,
   onChange,
   placeholder = 'Pick a date',
+  allowFuture = false,
+  minDate,
+  maxDate,
+  weekdaysOnly = false,
 }: {
   value: Date | undefined;
   onChange: (newDate: Date | undefined) => void;
   placeholder?: string;
+  allowFuture?: boolean;
+  minDate?: Date;
+  maxDate?: Date;
+  weekdaysOnly?: boolean;
 }) => {
   const currentYear = new Date().getFullYear();
   const years = Array.from({ length: currentYear - 1900 + 1 }, (_, i) => currentYear - i);
@@ -24,7 +32,7 @@ export const DatePicker = ({
   const handleYearChange = (year: string) => {
     if (value) {
       const nextDate = setYear(value, parseInt(year));
-      if (nextDate > today) {
+      if (!allowFuture && nextDate > today) {
         onChange(today);
       } else {
         onChange(nextDate);
@@ -35,7 +43,7 @@ export const DatePicker = ({
   };
 
   const handleMonthChange = (month: Date) => {
-    if (month > today) {
+    if (!allowFuture && month > today) {
       return;
     }
     if (value) {
@@ -77,7 +85,17 @@ export const DatePicker = ({
           onSelect={onChange}
           month={value}
           onMonthChange={handleMonthChange}
-          disabled={(date) => date > today || date < new Date('1900-01-01')}
+          disabled={(date) => {
+            if (minDate && date < minDate) return true;
+            if (maxDate && date > maxDate) return true;
+            if (!allowFuture && date > today) return true;
+            if (date < new Date('1900-01-01')) return true;
+            if (weekdaysOnly) {
+              const dayOfWeek = date.getDay();
+              if (dayOfWeek === 0 || dayOfWeek === 6) return true; // Disable Sunday (0) and Saturday (6)
+            }
+            return false;
+          }}
           initialFocus
         />
       </PopoverContent>
