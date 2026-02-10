@@ -169,14 +169,8 @@ async function parseApplication(
       .map((certificate) => `${certificate.language} (${certificate.level})`)
       .join(', '),
     submittedAt: format(application.createdAt, 'yyyy.MM.dd. HH:mm:ss'),
-    unavailableDate1: formData.unavailableDate1
-      ? formatDateString(formData.unavailableDate1)
-      : undefined,
-    unavailableDate2: formData.unavailableDate2
-      ? formatDateString(formData.unavailableDate2)
-      : undefined,
-    unavailableDate3: formData.unavailableDate3
-      ? formatDateString(formData.unavailableDate3)
-      : undefined,
+    unavailableDate1: formData.unavailableDate1 ? formatDateString(formData.unavailableDate1) : undefined,
+    unavailableDate2: formData.unavailableDate2 ? formatDateString(formData.unavailableDate2) : undefined,
+    unavailableDate3: formData.unavailableDate3 ? formatDateString(formData.unavailableDate3) : undefined,
   };
 }
