@@ -26,7 +26,7 @@ export default async function submitApplication(previousState: State, formData: 
       where: { id: application.id },
       include: { internationalTraining: { include: { certificates: true } } },
     });
-    await writeToSpreadsheet(completeApplication!);
+    await writeToSpreadsheet(completeApplication!, formData);
     await sendEmail({
       to: application.email,
       subject:

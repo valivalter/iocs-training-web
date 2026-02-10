@@ -218,6 +218,7 @@
       "address": "Add meg az állandó lakcímed.",
       "languages": "Add meg a nyelveket szóközzel elválasztva.",
       "availability": "Jelöld meg, mely hétvégéken érsz rá",
+      "unavailableDates": "Ezen felül kiválaszthatsz (nem kötelező) legfeljebb 3 hétköznapot, amikor biztosan nem tudnál részt venni egy képzésalkalmon",
       "international": "A képzés során egy csoport angol nyelven fog indulni",
       "acceptRules": "Kijelentem, hogy elolvastam és elfogadom a 2026-os Instruktorképzés <link>szabályzatát</link>, és a szabályokat magamra nézve kötelezőnek tartom.",
       "acceptPrivacyPolicy": "A jelentkezésem benyújtásával megerősítem, hogy elolvastam és elfogadom a 2026-os Instruktorképzés, az Instruktor Öntevékeny Csoport és az IÖCS Egyesület <link>adatkezelési tájékoztatóját</link>."
@@ -244,6 +245,7 @@
       "diet": "Válaszd ki az étrendedet",
       "customDiet": "Add meg az egyedi étrendedet",
       "languages": "Add meg a beszélt nyelveidet",
+      "unavailableDate": "Válassz egy dátumot",
       "motivation": "Miért szeretnél angol csoportban képződni?",
       "language": "Nyelv",
       "level": "Szint"

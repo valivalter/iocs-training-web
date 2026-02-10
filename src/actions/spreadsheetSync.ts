@@ -4,6 +4,7 @@ import { Application, InternationalTraining, LanguageCertificate } from '@prisma
 import { google, sheets_v4 } from 'googleapis';
 import { format } from 'date-fns';
 import { formatDateString } from '@/lib/utils';
+import { FormSchema } from '@/lib/formValidation';
 
 type SheetApplication = {
   lastName: string;
@@ -34,6 +35,9 @@ type SheetApplication = {
   internationalMotivation?: string;
   internationalCertificates?: string;
   submittedAt: string;
+  unavailableDate1?: string;
+  unavailableDate2?: string;
+  unavailableDate3?: string;
 };
 
 const columnNames = [
@@ -65,12 +69,16 @@ const columnNames = [
   'Külföldi motiváció',
   'Külföldi nyelvvizsgák',
   'Jelentkezés ideje',
+  'Semmiképpen ne 1',
+  'Semmiképpen ne 2',
+  'Semmiképpen ne 3',
 ];
 
 export async function writeToSpreadsheet(
   application: Application & {
     internationalTraining: (InternationalTraining & { certificates: LanguageCertificate[] }) | null;
-  }
+  },
+  formData: FormSchema
 ) {
   if (!process.env.GOOGLE_CLIENT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY || !process.env.GOOGLE_SHEET_ID) {
     throw new Error('Missing Google credentials');
@@ -90,7 +98,7 @@ export async function writeToSpreadsheet(
 
   const service = google.sheets({ version: 'v4', auth });
 
-  const parsedApplication = await parseApplication(application);
+  const parsedApplication = await parseApplication(application, formData);
 
   if (await isSheetEmpty(service)) {
     await service.spreadsheets.values.append({
@@ -126,7 +134,8 @@ async function isSheetEmpty(service: sheets_v4.Sheets) {
 async function parseApplication(
   application: Application & {
     internationalTraining: (InternationalTraining & { certificates: LanguageCertificate[] }) | null;
-  }
+  },
+  formData: FormSchema
 ): Promise<SheetApplication> {
   return {
     lastName: application.lastName,
@@ -160,5 +169,8 @@ async function parseApplication(
       .map((certificate) => `${certificate.language} (${certificate.level})`)
       .join(', '),
     submittedAt: format(application.createdAt, 'yyyy.MM.dd. HH:mm:ss'),
+    unavailableDate1: formData.unavailableDate1 ? formatDateString(formData.unavailableDate1) : undefined,
+    unavailableDate2: formData.unavailableDate2 ? formatDateString(formData.unavailableDate2) : undefined,
+    unavailableDate3: formData.unavailableDate3 ? formatDateString(formData.unavailableDate3) : undefined,
   };
 }

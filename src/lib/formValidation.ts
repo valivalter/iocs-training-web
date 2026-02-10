@@ -97,6 +97,36 @@ export const createFormSchema = (text: (_key: string) => string) =>
       languages: z.array(z.string().nonempty()),
       availableAtWeekend1: z.boolean(),
       availableAtWeekend2: z.boolean(),
+      unavailableDate1: z
+        .string()
+        .regex(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/)
+        .refine((value) => {
+          const date = stringToDate(value);
+          const minDate = new Date('2026-02-25');
+          const maxDate = new Date('2026-04-17');
+          return date >= minDate && date <= maxDate;
+        })
+        .optional(),
+      unavailableDate2: z
+        .string()
+        .regex(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/)
+        .refine((value) => {
+          const date = stringToDate(value);
+          const minDate = new Date('2026-02-25');
+          const maxDate = new Date('2026-04-17');
+          return date >= minDate && date <= maxDate;
+        })
+        .optional(),
+      unavailableDate3: z
+        .string()
+        .regex(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/)
+        .refine((value) => {
+          const date = stringToDate(value);
+          const minDate = new Date('2026-02-25');
+          const maxDate = new Date('2026-04-17');
+          return date >= minDate && date <= maxDate;
+        })
+        .optional(),
       internationalTraining: z
         .object({
           motivation: z.string().nonempty(),

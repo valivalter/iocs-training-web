@@ -218,6 +218,7 @@
       "address": "Provide your permanent address.",
       "languages": "Enter the languages, separated by spaces.",
       "availability": "Please let us know on which weekends you are available.",
+      "unavailableDates": "You can also optionally select up to 3 specific weekdays when you would not be able to attend a training session",
       "international": "In the training one group will be conducted in English.",
       "acceptRules": "I declare that I have read and accepted the 2026 Instructor Training <link>Rules</link> and consider them binding upon myself.",
       "acceptPrivacyPolicy": "By submitting my application, I confirm that I have read and accepted the <link>Data Protection Notice</link> for the 2026 Instructor Training, the Instructor Unprompted Group, and the IÖCS Association."
@@ -233,7 +234,7 @@
       "address": "Street and Number",
       "idNumber": "ID Number",
       "studentId": "1xxxxxxxxx",
-      "birthDate": "Pick a date",
+      "birthDate": "Choose a date",
       "birthPlace": "Place of Birth",
       "mothersName": "Mother's maiden name",
       "university": "Select your university",
@@ -244,6 +245,7 @@
       "diet": "Select your dietary preferences",
       "customDiet": "Enter your custom dietary preferences",
       "languages": "Enter the languages you speak",
+      "unavailableDate": "Choose a date",
       "motivation": "Why do you want to participate in english?",
       "language": "Language",
       "level": "Level"
