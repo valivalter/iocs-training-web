@@ -17,6 +17,7 @@ const IntroductionSection = () => {
     { src: '/images/groups/Francis.jpg', width: 1536, height: 1024 },
     { src: '/images/groups/Almos.jpg', width: 1251, height: 910 },
     { src: '/images/groups/Katus.png', width: 1477, height: 1125 },
+    { src: '/images/groups/Martin.png', width: 2500, height: 1874 },
   ];
 
   return (
