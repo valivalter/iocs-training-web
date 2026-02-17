@@ -60,6 +60,7 @@ export default {
       },
       screens: {
         xs: '400px',
+        '450px': '450px',
       },
       keyframes: {
         'accordion-down': {

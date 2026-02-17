@@ -52,11 +52,11 @@ const HeroSection = ({ promoVideoVimeoId, eventStartDatetime }: HeroSectionProps
         </h1>
         <h1
           className={`
-            mt-[20vh] w-screen text-center text-4xl font-bold
+            mt-[20vh] w-screen text-center font-bold
 
             sm:hidden
 
-            ${locale === 'hu' ? 'xs:text-5xl' : `xs:text-6xl`}
+            ${locale === 'hu' ? 'text-4xl 450px:text-5xl' : 'text-4xl xs:text-6xl'}
           `}
         >
           {text('heading-sm')}
