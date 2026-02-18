@@ -1,5 +1,6 @@
 'use client';
 
+import confetti from 'canvas-confetti';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { AlertCircle, Check, Info, LoaderCircle, Send } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
@@ -111,6 +112,11 @@ export const ApplicationForm = ({ deadline }: { deadline: Date | null }) => {
     if (state?.status === 'success') {
       router.push('/');
       setTimeout(() => {
+        confetti({
+          particleCount: 100,
+          spread: 60,
+          origin: { y: 0.8 },
+        });
         toast({
           title: text('success.title'),
           description: text('success.description'),

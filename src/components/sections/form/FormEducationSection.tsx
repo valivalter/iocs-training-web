@@ -1,3 +1,4 @@
+import confetti from 'canvas-confetti';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 import { UseFormReturn } from 'react-hook-form';
@@ -132,7 +133,18 @@ export const FormEducationSection: React.FC<FormStudiesSectionProps> = ({ form }
               return (
                 <FormItem className='grow'>
                   <FormLabel>{text('labels.letter')}</FormLabel>
-                  <Select onValueChange={field.onChange}>
+                  <Select
+                    onValueChange={(value) => {
+                      field.onChange(value);
+                      if (value === 'H') {
+                        confetti({
+                          particleCount: 100,
+                          spread: 60,
+                          origin: { y: 0.8 },
+                        });
+                      }
+                    }}
+                  >
                     <FormControl>
                       <SelectTrigger {...field}>
                         <SelectValue placeholder={text('placeholders.letter')} />

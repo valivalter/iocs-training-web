@@ -1,5 +1,6 @@
 'use client';
 
+import confetti from 'canvas-confetti';
 import { motion, useInView } from 'framer-motion';
 import { Facebook, Globe, Instagram, Turtle } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
@@ -114,6 +115,11 @@ const Footer = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.0 }}
                 onClick={() => {
+                  confetti({
+                    particleCount: 100,
+                    spread: 60,
+                    origin: { y: 0.8 },
+                  });
                   toast({
                     title: text('surprise-tortoise'),
                     description: '',

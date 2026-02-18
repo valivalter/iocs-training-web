@@ -1,5 +1,6 @@
 'use client';
 
+import confetti from 'canvas-confetti';
 import { Download, PawPrint } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import React from 'react';
@@ -36,6 +37,11 @@ const RulesPage = () => {
               bufe: (chunks) => (
                 <span
                   onClick={() => {
+                    confetti({
+                      particleCount: 100,
+                      spread: 60,
+                      origin: { y: 0.8 },
+                    });
                     toast({
                       title: 'Megtaláltad Szamit! 🐩',
                       description: '',
