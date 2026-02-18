@@ -63,7 +63,7 @@ const HeroSection = ({ promoVideoVimeoId, eventStartDatetime }: HeroSectionProps
         </h1>
       </Reveal>
 
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center px-6'>
         <Reveal delay={0.2}>
           <Countdown targetDate={eventStartDatetime ?? new Date().toDateString()} />
         </Reveal>
