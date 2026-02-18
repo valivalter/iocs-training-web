@@ -1,7 +1,7 @@
 'use client';
 
-import confetti from 'canvas-confetti';
 import { zodResolver } from '@hookform/resolvers/zod';
+import confetti from 'canvas-confetti';
 import { AlertCircle, Check, Info, LoaderCircle, Send } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import React, { startTransition, useActionState, useEffect, useState } from 'react';
