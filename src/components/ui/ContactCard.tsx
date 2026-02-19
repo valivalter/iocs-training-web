@@ -12,6 +12,7 @@ export default function ContactCard({
   email,
   phone,
   image,
+  onImageClick,
 }: {
   title: string;
   firstName: string;
@@ -20,6 +21,7 @@ export default function ContactCard({
   email: string;
   phone: string;
   image: string;
+  onImageClick?: () => void;
 }) {
   const locale = useLocale();
   const name = `${title} ${locale === 'hu' ? `${lastName} ${firstName}` : `${firstName} ${lastName}`}`;
@@ -38,6 +40,7 @@ export default function ContactCard({
         height={200}
         width={200}
         className='absolute -top-[20px] rounded-full object-cover shadow-lg'
+        onClick={onImageClick}
       />
       <h2 className='mt-6 text-xl font-bold'>{name}</h2>
       <p className='h-12 text-accent-foreground/80'>{role}</p>

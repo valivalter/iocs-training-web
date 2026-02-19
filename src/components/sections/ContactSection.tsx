@@ -1,14 +1,18 @@
+'use client';
+
 import { Mail } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import ContactCard from '@/components/ui/ContactCard';
+import { Dialog, DialogContent, DialogTitle, VisuallyHidden } from '@/components/ui/dialog';
 import { Reveal } from '@/components/ui/Reveal';
 
 export const ContactSection = () => {
   const text = useTranslations('ContactSection');
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const contacts = [
     {
       id: 1,
@@ -74,6 +78,7 @@ export const ContactSection = () => {
               email={contact.email}
               phone={contact.phone}
               image={contact.image}
+              onImageClick={contact.id === 2 ? () => setIsDialogOpen(true) : undefined}
             />
           </Reveal>
         ))}
@@ -99,6 +104,18 @@ export const ContactSection = () => {
           </CardContent>
         </Card>
       </Reveal>
+      
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className='max-w-xs bg-gradient-to-tr from-amber-500/50 to-amber-600'>
+          <VisuallyHidden>
+            <DialogTitle>{text('dialog-message')}</DialogTitle>
+          </VisuallyHidden>
+          <div className='flex flex-col items-center gap-4 py-4 text-center'>
+            <span className='text-6xl'>👌</span>
+            <p className='text-foreground text-lg font-semibold'>{text('dialog-message')}</p>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };

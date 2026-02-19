@@ -21,8 +21,7 @@
     "subheading": "Be part of an unforgettable experience and make lifelong connections.",
     "cta": "Apply Now",
     "cta-video": "Watch the video",
-    "cta-surprise": "Surprise",
-    "dialog-message": "You looked!"
+    "cta-surprise": "Surprise"
   },
   "Countdown": {
     "heading": "The training starts in",
@@ -135,7 +134,8 @@
     "title-training-organizer": "Training organizer",
     "title-FEB": "President of the Supervisory Board",
     "title-IOCS": "President of the IÖCS",
-    "send-message": "Send a message to us"
+    "send-message": "Send a message to us",
+    "dialog-message": "You looked!"
   },
   "FAQSection": {
     "heading": "Frequently Asked Questions",
