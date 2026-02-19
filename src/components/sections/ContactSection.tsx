@@ -104,7 +104,6 @@ export const ContactSection = () => {
           </CardContent>
         </Card>
       </Reveal>
-      
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent className='max-w-xs bg-gradient-to-tr from-amber-500/50 to-amber-600'>
           <VisuallyHidden>
